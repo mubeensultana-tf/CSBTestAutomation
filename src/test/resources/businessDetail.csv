@@ -1,0 +1,3 @@
+businessName,businessType,phoneNumber,email,ssn,tinNumber,securityWord,streetAddress1,doe,city,zip,identificationNumber,issueDate,expiryDate,prefferedId,naicsCode,submissionId
+Cultfit,Limited Liability Company,3802387248,test@test.com,887435437,887435433,Security,Bermuda Road,051990,Arizona,32456,12345678,01012020,01012029,ssn,Soybean Farming,1
+Cultfit,Limited Liability Company,3802387248,test@test.com,887435437,887435433,Security,Bermuda Road,051990,Arizona,32456,12345678,01012020,01012029,ssn,Soybean Farming,2

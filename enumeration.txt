@@ -1,0 +1,144 @@
+{
+      "attributes": {
+        "type": "tffa__LookupTable__c",
+        "referenceId": "lt_LENDING_ISSUING_ENTITIES"
+      },
+      "Name": "Lending Issuing entities enumeration",
+      "tffa__Code__c": "LENDING_ISSUING_ENTITIES",
+      "tffa__Description__c": " Identification documents enumeration type for lending Decision pro api ",
+      "tffa__Items__c": "[{\"key\":\"DL\",\"value\":\"U.S. State\"},{\"key\":\"StateID\",\"value\":\"U.S. State\"},{\"key\":\"Passport\",\"value\":\"U.S. Government\"},{\"key\":\"MilitaryID\",\"value\":\"U.S. Government\"},{\"key\":\"GREEN_CARD\",\"value\":\"Other\"}]"
+    },
+    {
+      "attributes": {
+        "type": "tffa__LookupTable__c",
+        "referenceId": "lt_LENDING_IDENTIFICATION_TYPE"
+      },
+      "Name": "Lending Identification type enumeration",
+      "tffa__Code__c": "LENDING_IDENTIFICATION_TYPE",
+      "tffa__Description__c": " Identification type enumeration for lending Decision pro api ",
+      "tffa__Items__c": "[{\"key\":\"DL\",\"value\":\"Driver's License\"},{\"key\":\"StateID\",\"value\":\"State ID\"},{\"key\":\"Passport\",\"value\":\"Passport\"},{\"key\":\"MilitaryID\",\"value\":\"Military ID\"},{\"key\":\"GREEN_CARD\",\"value\":\"Other (Green Card)\"}]"
+    },
+	
+	
+	
+	
+	 // private static final Map<string, string> ISSUING_ENTITIES = new Map<string, string>{
+  //   'DL' => 'U.S. State',
+  //   'StateID' => 'U.S. State',
+  //   'Passport' => 'U.S. Government',
+  //   'MilitaryID' => 'U.S. Government',
+  //   'GREEN_CARD' => 'Other',
+  //   'Amish' => 'Other',
+  //   'ELDERLY' => 'Other',
+  //   'MINOR' => 'other',
+  //   'PermanentResidentCard' => 'other'
+  // };
+
+  // private static final Map<string, string> ID_TYPE_MAP = new Map<string, string>{
+  //   'DL' => 'Driver\'s License',
+  //   'StateID' => 'State ID',
+  //   'Passport' => 'Passport',
+  //   'MilitaryID' => 'Military ID',
+  //   'GREEN_CARD' => 'Other (Green Card)',
+  //   'Amish' => 'Other (Amish)',
+  //   'ELDERLY' => 'Other (Elderly)',
+  //   'MINOR' => 'other (Minor)',
+  //   'PermanentResidentCard' => 'other (PermanentResidentCard)'
+  // };
+  
+  // private static final Map<string, string> HOUSING_STATUS = new Map<string, string>{
+  //   'OWNED_FREE_AND_CLEAR' => 'Owns Residence',
+  //   'Rented' => 'Rents',
+  //   'Mortgage' => 'Other',
+  //   'Parents_Relatives' => 'Living with Parents/Others',
+  //   'Other' => 'Other',
+  //   'NO_EXPENSE' => 'Other',
+  //   'RENT_FREE' => 'Other'
+  // };
+  
+  // //1 purchase 2 home improvement 3 refinance
+  // private static final Map<string, integer> HELOC_PURPOSE_TYPE = new Map<string, integer>{
+  //   // 'PAY_DEBT' => 3, // no value in api enumeration
+  //   'HOME_PURCHASE' => 1,
+  //   // 'OTHER' => 3, //no value in api enumeration
+  //   'HOME_IMPROVEMENT' => 2,
+  //   'REFINANCE' => 3,
+  //   'DEBT_CONSOLIDATION' => 3 //no value in api enumeration
+  // };
+
+  //1 owner occupied 2 not owner occupied 3 not applicable
+  // private static final Map<string, integer> HELOC_PROPOCC_TYPE = new Map<string, integer>{
+  //   'INVESTMENT' => 3,
+  //   'LAND_ONLY' => 3,
+  //   'SECONDARY_RESIDENCE' => 2,
+  //   'PRIMARY_RESIDENCE' => 1
+  // };
+
+  // //1 - Direct Ownership 2 - Indirect Ownership 3-Paid LeaseHold 4 - unpaid Lease Hold 5 - Notapplicable
+  // private static final Map<string, integer> MHLand_PROP_TYPE = new Map<string, integer>{
+  //   'PRIMARY_RESIDENCE' => 1,
+  //   'INVESTMENT' => 2,
+  //   'LAND_ONLY' => 2,
+  //   'SECONDARY_RESIDENCE' => 2,
+  //   'SECONDARY_HOME' => 4
+  // };
+
+  // //Principal dwelling, secondary residence, Investment
+  // private static final Map<string, String> REAL_PROP_USAGE_TYPE = new Map<string, String>{
+  //   'PRIMARY_RESIDENCE' => 'Principal Dwelling',
+  //   'INVESTMENT' => 'Investment',
+  //   'LAND_ONLY' => 'Investment',
+  //   'SECONDARY_RESIDENCE' => 'Secondary Residence',
+  //   'SECONDARY_HOME' => 'Secondary Residence'
+  // };
+
+  // private static final Map<string, string> HELOC_LOAN_PURPOSE = new Map<string, string>{
+  //   // 'PAY_DEBT' => 'Other', // dont have the api value for this type
+  //   // 'OTHER' => 'Other',
+  //   'HOME_PURCHASE' => 'Home Purchase',
+  //   'HOME_IMPROVEMENT' => 'Home improvement (Dwelling Secured)',
+  //   'DEBT_CONSOLIDATION' => 'Debt Consolidation (HMDA)',
+  //   'REFINANCE' => 'Refinance (Dwelling Secured)'
+  // };
+
+  // private static final Map<string, string> PERSONAL_LOAN_PURPOSE = new Map<string, string>{
+  //   'DEBT_CONSOLIDATION' => 'Debt Consolidation',
+  //   // 'INCREASE_LIMIT' => 'Other', //no value in api
+  //   // 'HOME_IMPROVEMENT' => 'Home Improvement',
+  //   // 'PURCHASE' => 'Purchase',
+  //   'REFINANCE' => 'Refinance Existing loan with First Financial Bank',
+  //   'OTHER' => 'Other',
+  //   'PERSONAL' => 'Personal'
+  // };
+
+  // private static final Map<string, Integer> PROPERTY_TYPE = new Map<string, Integer>{
+  //   'SINGLE_FAMILY' => 3,
+  //   'MULTI_FAMILY' => 3,
+  //   'MANUFACTURED_HOUSE' => 2
+  // };
+
+
+
+
+ // /**
+  //  * This method returns picklist label for the input value
+  //  *
+  //  * @param Schema.DescribeFieldResult
+  //  * @param String (Picklist Key)
+  //  * @returns String
+  //  *
+  //  */
+  // private static string getPicklistLabel(Schema.DescribeFieldResult fieldResult, string value) {
+  //   if (string.isEmpty(value)) {
+  //     return null;
+  //   }
+  //   value = value.split(';')[0];
+  //   List<Schema.PicklistEntry> values = fieldResult.getPicklistValues();
+
+  //   for (Schema.PicklistEntry v : values) {
+  //     if (value == v.getValue()) {
+  //       return v.getLabel();
+  //     }
+  //   }
+  //   return null;
+  // }

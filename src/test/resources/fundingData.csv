@@ -1,0 +1,4 @@
+fundingType,cardNumber,cardHolderName,expiryDate,cvv,zipCode,streetAddress,fundingSource,bank,achUserId,achPassword,routingNumber,accountNumber,submissionId
+external,4421440000403866,John Doe,29/29,323,32456,12300 Bermuda Road,ACH,Citibank Online,df,df,121000248,234324341,1
+external,4421440000403866,John Doe,29/29,323,32456,12300 Bermuda Road,ACH,Citibank Online,df,df,121000248,234324341,2
+external,4421440000403866,John Doe,29/29,323,32456,12300 Bermuda Road,ACH,Citibank Online,df,df,121000248,234324341,3

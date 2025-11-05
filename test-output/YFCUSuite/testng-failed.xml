@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CZTFFASuite]">
+  <test thread-count="5" name="cucumber(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="channel" value="DIGITAL"/>
+    <classes>
+      <class name="com.cztffa.cucumber.parallel.CZTFFAFeatureRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="8 0 7 6 9 1 5 4 2 3 10 12 11 15 14 13 16 17 19 18 23 21 24 20 22"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cztffa.cucumber.parallel.CZTFFAFeatureRunner -->
+    </classes>
+  </test> <!-- cucumber(failed) -->
+</suite> <!-- Failed suite [CZTFFASuite] -->

@@ -1,0 +1,1979 @@
+<html>
+<head>
+<title>TestNG:  cucumber</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>cucumber</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/25/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 25 10:39:12 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21267 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employment status dropdown", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:331)
+</pre></div><a href='#' onClick='toggleBox("stack-trace48204959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48204959'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:331)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate qualify live member button", "Adding a product to the cart and navigate to review page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace489062439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489062439'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:55)
+</pre></div></td>
+<td>6</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Happy flow of single applicant details", "Review page flow"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Review.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace254861618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254861618'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Review.feature:5)
+</pre></div></td>
+<td>6</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate preferred contact dropdown", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:379)
+</pre></div><a href='#' onClick='toggleBox("stack-trace311533266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311533266'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:379)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate qualify current member button", "Adding a product to the cart and navigate to review page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace317392232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace317392232'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:37)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate add beneficiary fields", "Validate AccountDetails page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:60)
+</pre></div><a href='#' onClick='toggleBox("stack-trace413873196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413873196'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:60)
+</pre></div></td>
+<td>8</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Save and resume functionality of personal info page", "Validate Save and Resume functionality"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/SaveResume.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1479177517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1479177517'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/SaveResume.feature:5)
+</pre></div></td>
+<td>4</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate plaid toaster message validation", "Validate Funding Page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Funding.feature:167)
+</pre></div><a href='#' onClick='toggleBox("stack-trace555348627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace555348627'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Funding.feature:167)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Security word", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace737535801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737535801'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:5)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate state dropdown", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:283)
+</pre></div><a href='#' onClick='toggleBox("stack-trace718150402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace718150402'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:283)
+</pre></div></td>
+<td>6</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Happy flow of multiapplicant scenario", "Review page flow"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Review.feature:87)
+</pre></div><a href='#' onClick='toggleBox("stack-trace397771065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397771065'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Review.feature:87)
+</pre></div></td>
+<td>4</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Happy flow of account details", "Validate Funding Page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Funding.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1819329826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1819329826'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Funding.feature:5)
+</pre></div></td>
+<td>8</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate funding account dropdown", "Validate Funding Page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Funding.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1958196257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1958196257'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Funding.feature:89)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate qualify buttons", "Adding a product to the cart and navigate to review page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1765762217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765762217'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:21)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate email", "Adding a product to the cart and navigate to review page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1234476169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1234476169'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Product.feature:5)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Happy flow of account details", "Validate AccountDetails page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:170)
+</pre></div><a href='#' onClick='toggleBox("stack-trace348198752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace348198752'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:170)
+</pre></div></td>
+<td>8</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate add beneficiary fields", "Validate AccountDetails page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace528845795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace528845795'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:5)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Street Address", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:97)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1023906785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1023906785'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:97)
+</pre></div></td>
+<td>5</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate citizenship dropdown", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:235)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1577182705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1577182705'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:235)
+</pre></div></td>
+<td>6</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Happy flow of account details", "Validate AccountDetails page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:238)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1773636038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1773636038'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:238)
+</pre></div></td>
+<td>8</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate add beneficiary fields", "Validate AccountDetails page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:115)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1692744477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1692744477'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/AccountDetails.feature:115)
+</pre></div></td>
+<td>8</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate city and zip", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:143)
+</pre></div><a href='#' onClick='toggleBox("stack-trace154935303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace154935303'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:143)
+</pre></div></td>
+<td>5</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate memeberdiligence dropdown", "Validate memberdiligence page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/MemberDiligence.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace8817210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8817210'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/MemberDiligence.feature:5)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Date of Birth", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2063783550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2063783550'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:51)
+</pre></div></td>
+<td>4</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+<tr>
+<td title='com.cztffa.cucumber.parallel.CZTFFAFeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.cztffa.cucumber.parallel.CZTFFAFeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate ssn id issue and expiry", "Validating Personal details page"</td>
+<td><div><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:189)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1035318858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1035318858'><pre>com.cztffa.exception.FrameworkException: Failed to launch Chrome - {}session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.225 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KJOQ7211&apos;, ip: &apos;192.168.29.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: SeleniumUIDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0085A813+48355]
+	(No symbol) [0x007EC4B1]
+	(No symbol) [0x006F5358]
+	(No symbol) [0x007161AC]
+	(No symbol) [0x00711EF3]
+	(No symbol) [0x00710579]
+	(No symbol) [0x00740C55]
+	(No symbol) [0x0074093C]
+	(No symbol) [0x0073A536]
+	(No symbol) [0x007182DC]
+	(No symbol) [0x007193DD]
+	GetHandleVerifier [0x00ABAABD+2539405]
+	GetHandleVerifier [0x00AFA78F+2800735]
+	GetHandleVerifier [0x00AF456C+2775612]
+	GetHandleVerifier [0x008E51E0+616112]
+	(No symbol) [0x007F5F8C]
+	(No symbol) [0x007F2328]
+	(No symbol) [0x007F240B]
+	(No symbol) [0x007E4FF7]
+	BaseThreadInitThunk [0x76837BA9+25]
+	RtlInitializeExceptionChain [0x7751BD2B+107]
+	RtlClearBits [0x7751BCAF+191]
+
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:37)
+	at com.cztffa.application.ChromeWebApplication.launch(ChromeWebApplication.java:20)
+	at com.cztffa.driver.SeleniumUIDriver.launch(SeleniumUIDriver.java:33)
+	at com.cztffa.page.base.BasePage.launch(BasePage.java:62)
+	at com.cztffa.cucumber.parallel.ProductStepDefinition._i_am_at_the_home_page(ProductStepDefinition.java:56)
+	at ✽.: I am at the home page(file:///C:/Users/hp/Downloads/cztffa-Automation%20(2)/cztffa-Automation/scripts/cucumber/src/test/resources/com/cztffa/cucumber/parallel/Personal.feature:189)
+</pre></div></td>
+<td>7</td>
+<td>com.cztffa.cucumber.parallel.CZTFFAFeatureRunner@2a40cd94</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+[
+	{
+		"firstName": "Pulkit",
+		"middleName": "K",
+		"lastName": "Jain",
+		"phoneNumber": "3802387248",
+		"email": "yterafinan@gmail.com",
+		"ssn": "133435437",
+		"motherName": "Angel",
+		"securityWord": "Security",
+		"streetAddress1": "12300 Bermuda Road",
+		"dob": "05051990",
+		"city": "Arizona",
+		"zip": "32456",
+		"homePhone": "3802387247",
+		"workPhone": "3802387246",
+		"occupation": "self employed",
+		"employer": "test",
+		"identificationNumber": "12345678",
+		"issueDate": "01012020",
+		"expiryDate": "01012026",
+		"suffix": "Sr",
+		"citizenShip": "citizen",
+		"prefferedContactMethod": "mobile",
+		"employmentStatus": "Employed",
+		"prefferedId": "US Passport",
+		"membershipQualify": "relate",
+		"memberName": "TestUser",
+		"relationship": "Brother",
+		"memeberDeligence": {
+			"domesticWires": "none",
+			"internationalWires": "none",
+			"monetoryInstuments": "none"
+		},
+		"accountDetails": {
+			"accDetails": "everyDayChecking",
+			"additionalServices": "debitcard",
+			"cardStyle": "orange",
+			"linkedProtection": true,
+			"accountNumber": "everyday",
+			"accept": true,
+			"skipped": true,
+			"nickName": "TestAccount"
+		},
+		"funding": {
+			"sourceOfFunding": "External Account",
+			"bank": "Citi Bank",
+			"userId": "user_good",
+			"password": "pass_good"
+		},
+		"validation": {}
+	}
+]
