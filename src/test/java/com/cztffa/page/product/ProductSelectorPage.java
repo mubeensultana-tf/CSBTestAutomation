@@ -6,15 +6,12 @@ import java.time.Duration;
 import java.util.List;
 
 import com.cztffa.driver.SeleniumDriver;
+import com.cztffa.objects.*;
 import com.cztffa.page.review.ReviewPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-import com.cztffa.objects.Person;
-import com.cztffa.objects.Product;
-import com.cztffa.objects.ProductTab;
-import com.cztffa.objects.Validation;
 import com.cztffa.page.base.BasePage;
 
 import lombok.extern.slf4j.Slf4j;
@@ -24,26 +21,26 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 @Slf4j
 public class ProductSelectorPage extends BasePage {
 
-	public void fillDetails(Person person) throws InterruptedException {
-		waitForSpinnerToDisappear();
-		wait(getgettingStartedPageModel().firstName);
+    public void fillDetails(Person person) throws InterruptedException {
+        waitForSpinnerToDisappear();
+        wait(getgettingStartedPageModel().firstName);
 
-		log.info("Entering first name");
-		browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().firstName, person.getFirstName());
-		log.info("Entering last name");
-		browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().lastName, person.getLastName());
-		log.info("Entering phone number");
-		browserActions.scrollToWebElement(getSeleniumdriver(), getgettingStartedPageModel().phoneNumber);
-		browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().phoneNumber, person.getPhoneNumber());
-		log.info("Entering email");
-		browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().personalEmail, person.getEmail());
-		log.info("Accepting policy");
-		browserActions.clickButton(getSeleniumdriver(), getgettingStartedPageModel().acceptPolicy);
-		waitForSpinnerToDisappear();
-		waitWithSpinner(getgettingStartedPageModel().acceptBtn);
-		browserActions.clickUsingEnter(getSeleniumdriver().getWebDriver(), getgettingStartedPageModel().acceptBtn);
-		log.info("Clicked on accept button");
-	}
+        log.info("Entering first name");
+        browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().firstName, person.getFirstName());
+        log.info("Entering last name");
+        browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().lastName, person.getLastName());
+        log.info("Entering phone number");
+        browserActions.scrollToWebElement(getSeleniumdriver(), getgettingStartedPageModel().phoneNumber);
+        browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().phoneNumber, person.getPhoneNumber());
+        log.info("Entering email");
+        browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().personalEmail, person.getEmail());
+        log.info("Accepting policy");
+        browserActions.clickButton(getSeleniumdriver(), getgettingStartedPageModel().acceptPolicy);
+        waitForSpinnerToDisappear();
+        waitWithSpinner(getgettingStartedPageModel().acceptBtn);
+        browserActions.clickUsingEnter(getSeleniumdriver().getWebDriver(), getgettingStartedPageModel().acceptBtn);
+        log.info("Clicked on accept button");
+    }
 
 //	public void saveResumePage(Person person) throws InterruptedException {
 //		log.info("Processing started for save and resume");
@@ -95,4 +92,29 @@ public class ProductSelectorPage extends BasePage {
 //
 //	}
 
+    public void enterExistingUserCredentials(ExistingPerson existingPerson) throws InterruptedException {
+        log.info("Enter UserName:");
+        browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().userName, existingPerson.getUserName());
+        log.info("Enter Password");
+        browserActions.enterText(getSeleniumdriver(), getgettingStartedPageModel().password, existingPerson.getPassword());
+        log.info("Accepting policy");
+        browserActions.clickButton(getSeleniumdriver(), getgettingStartedPageModel().acceptPolicy);
+        waitForSpinnerToDisappear();
+        waitWithSpinner(getgettingStartedPageModel().acceptBtn);
+        browserActions.clickUsingEnter(getSeleniumdriver().getWebDriver(), getgettingStartedPageModel().acceptBtn);
+        log.info("Clicked on accept button");
+        log.info("Click on Sign In button");
+
+        browserActions.scrollToWebElement(getSeleniumdriver(), getgettingStartedPageModel().LetsGoButton);
+        Thread.sleep(1000);
+        waitWithSpinner(getgettingStartedPageModel().LetsGoButton);
+        //Thread.sleep(2000);
+        browserActions.clickButton(getSeleniumdriver(), getgettingStartedPageModel().LetsGoButton);
+        log.info("Clicked on LetsGo button");
+
+
+
+
+    }
 }
+

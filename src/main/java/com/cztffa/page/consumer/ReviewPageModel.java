@@ -16,11 +16,14 @@ public class ReviewPageModel {
     @FindBy(xpath = ReviewPageXpath.TERMANDCONDITIONS)
     public WebElement termAndConditions;
     
-    @FindBy(xpath = ReviewPageXpath.SUBMITBUTTON)
+    @FindBy(xpath = "//button[normalize-space()='Submit Application']")
     public WebElement submitButton;
     
     @FindBy(xpath = ReviewPageXpath.SUCCESSMSG)
     public WebElement successMsg;
+
+    @FindBy(xpath = ReviewPageXpath.SUCCESSMSG)
+    public WebElement reviewpageloadmsg;
     
     public String disclosureCheckbox = "//div[@t-model='Disclosures__r.%s']//tf-checkbox//input";
     

@@ -16,18 +16,19 @@ public class GettingStartedPageModel {
     @FindBy(xpath = GettingStartedPageXpath.OPENANACCOUNT)
     public WebElement OpenAnAccount;
     
-    @FindBy(xpath = GettingStartedPageXpath.TF_DROPDOWN_0_INPUT)
-    public WebElement state;
+//    @FindBy(xpath = GettingStartedPageXpath.STATE)
+//    public WebElement state;
     
-    @FindBy(xpath = GettingStartedPageXpath.FIRSTNAME_2_INPUT)
+    @FindBy(xpath = GettingStartedPageXpath.FIRSTNAME)
     public WebElement firstName;
-    @FindBy(xpath = GettingStartedPageXpath.LASTNAME_2_INPUT)
+
+    @FindBy(xpath = "//tf-input[@t-model='Party__r.LastName__c']//input")
     public WebElement lastName;
-    
-    @FindBy(xpath = GettingStartedPageXpath.PHONENUMBER)
+
+    @FindBy(xpath = "//tf-phone[@t-model='Party__r.PrimaryPhone__c']//input")
     public WebElement phoneNumber;
     
-    @FindBy(xpath = GettingStartedPageXpath.PERSONALEMAIL)
+    @FindBy(xpath = "//tf-email[@t-model='Party__r.PrimaryEmail__c']//input")
     public WebElement personalEmail;
     
     @FindBy(xpath = GettingStartedPageXpath.ACCEPTPOLICY)
@@ -38,5 +39,29 @@ public class GettingStartedPageModel {
     
     @FindBy(xpath = GettingStartedPageXpath.STARTAPPLICATIONBUTTON)
     public WebElement startApplicationButton;
-    
+
+    @FindBy(xpath = "//tf-dropdown[@t-model='State__c']//input")
+    public WebElement state;
+
+    @FindBy(xpath = "//div[contains(text(),' Massachusetts ')]")
+    public WebElement selectedState;
+    //Existing customer
+    @FindBy(xpath = "//button[normalize-space()='Log In']")
+    public WebElement LogInButton;
+
+    @FindBy(xpath = "//button[normalize-space()=\"Ok, Let's Go!\"]")
+    public WebElement LetsGoButton;
+
+    @FindBy(xpath = "//tf-input[@t-model='Credentials.User']//input")
+    public WebElement userName;
+
+    @FindBy(xpath = "//tf-input[@t-model='Credentials.Password']//input")
+    public WebElement password;
+
+    @FindBy(xpath = "//tf-checkbox[@t-model='Accepted__c']//input")
+    public WebElement disclosureLink;
+
+
+
+
 }

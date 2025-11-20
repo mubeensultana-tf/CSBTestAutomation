@@ -12,9 +12,7 @@ public enum Product {
   SIMPLECHECKING("SimpleChecking",
       "//tfcz-space-product-card[.//div[text()='Simple Checking']]//button[contains(text(), 'Add to Cart')]"),
   SIMPLESAVINGS("SimpleSavings",
-      "//tfcz-space-product-card[.//div[text()='Simple Savings']]//button[contains(text(), 'Add to Cart')]"),
-  CHECKOUTBTN("checkOutBtn",
-      "//button[normalize-space()='Checkout']");
+      "//tfcz-space-product-card[.//div[text()='Simple Savings']]//button[contains(text(), 'Add to Cart')]");
 
   private String name;
 
@@ -26,8 +24,6 @@ public enum Product {
       return SIMPLECHECKING;}
       else if (name.equalsIgnoreCase("SimpleSavings")) {
       return SIMPLESAVINGS;}
-      else if (name.equalsIgnoreCase("checkOutBtn")) {
-      return CHECKOUTBTN;}
       return null;
   }
 }

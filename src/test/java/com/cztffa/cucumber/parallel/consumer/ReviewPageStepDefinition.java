@@ -4,6 +4,7 @@ import com.cztffa.browseractions.BrowserActions;
 import com.cztffa.dataproviders.DataCSVExtractor;
 import com.cztffa.driver.SeleniumDriver;
 import com.cztffa.page.review.ReviewPage;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import lombok.extern.slf4j.Slf4j;
@@ -31,9 +32,9 @@ public class ReviewPageStepDefinition {
     @Then("^: I should accept the all terms and conditions (\\d+)$")
     public void acceptAllTermsAndConditions(int numberOfDisclosure) throws Throwable {
         log.info(" Starting of T&C Page");
-
+Thread.sleep(1000);
         reviewPage.waitForSpinnerToDisappear();
-        reviewPage.waitForVisibilityWithLoader("//*[contains(text(),'You are almost done')]");
+      //  reviewPage.waitForVisibilityWithLoader("//*[contains(text(),'You are almost done')]");
         reviewPage.spinner();
 
         reviewPage.scrollToElementWithActionPause(seleniumdriver,reviewPage.getReviewPageModel().termAndConditions);
@@ -77,4 +78,13 @@ public class ReviewPageStepDefinition {
         assertTrue(reviewPage.getReviewPageModel().successMsg.isDisplayed());
         log.info("Successfully completed the flow");
     }
-}
+
+    @Then(": I should see the review page.")
+    public void iShouldSeeTheReviewPage() throws Throwable {
+        DataCSVExtractor.applicantCount++;
+        reviewPage.spinner();
+        assertTrue(reviewPage.getReviewPageModel().reviewpageloadmsg.isDisplayed());
+        log.info("Successfully loaded a review page");
+    }
+    }
+

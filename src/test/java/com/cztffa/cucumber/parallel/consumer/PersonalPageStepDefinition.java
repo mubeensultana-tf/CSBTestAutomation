@@ -7,6 +7,7 @@ import com.cztffa.objects.*;
 import com.cztffa.page.review.ReviewPage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.DataTableType;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -80,6 +81,8 @@ public class PersonalPageStepDefinition {
 		log.info("Navigated to personal information page");
 	}
 
+
+
 	@DataTableType(replaceWithEmptyString = "[blank]")
 	public String stringType(String cell) {
 		return cell;
@@ -108,54 +111,66 @@ public class PersonalPageStepDefinition {
 		}
 	}
 
-//	@And(": I provide the below additional applicant details for {string}")
-//	public void additionalApplicant(String submissionId) throws Throwable {
-//		List<Map<?, ?>> applicantDataStore = DataCSVExtractor.applicantDataStore;
-//		int totalApplicants = 0;
-//		List<Map<String, String>> matchingApplicants = new ArrayList<>();
-//		for (Map<?, ?> row : applicantDataStore) {
-//			Object submissionIdObj = row.get("submissionId");
-//			if (submissionIdObj != null && submissionIdObj.toString().trim().equals(submissionId)){
-//				matchingApplicants.add((Map<String, String>) row);
-//				totalApplicants++;
-//			}
-//		}
-//		log.info("Total applicants for submissionId " + submissionId + ": " + matchingApplicants.size());
-//		int currentIndex = 0;
-//		for (int i = 1; i < matchingApplicants.size(); i++) {
-//			Map<String, String> row = matchingApplicants.get(i);
-//			log.info("CurrentIndex: " + currentIndex);
-//			int targetIndex = currentIndex + 1;
-//			if (targetIndex >= totalApplicants) break;
-//
-//			log.info("applicantDataStore get: "+ applicantDataStore.get(targetIndex).toString());
-//			reviewPage.waitWithSpinner(reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
-//			browserActions.scrollToWebElement(seleniumdriver, reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
-//			browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
-//
-//			reviewPage.waitWithSpinner(reviewPage.getPersonalInfoPageModel().proceedWithoutPrefillBtn);
-//			browserActions.scrollToWebElement(seleniumdriver, reviewPage.getPersonalInfoPageModel().proceedWithoutPrefillBtn);
-//			browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), reviewPage.getPersonalInfoPageModel().proceedWithoutPrefillBtn);
-//			log.info("Clicked on Proceed Without prefill");
-//
-//			JSONObject jsonObject = new JSONObject(row);
-//			ObjectMapper objectMapper = new ObjectMapper();
-//			Person person = objectMapper.readValue(jsonObject.toString(), Person.class);
-//
-//			Validation validation = new Validation();
-//			validation.setSkipPreferredContactDropdown(true);
-//			validation.setSkipEmploymentStatusDropdown(true);
-//
-//			stepData.setValidation(validation);
-//			person.setValidation(validation);
-//			stepData.setPerson(person);
-//
-//			reviewPage.addApplicant(person, targetIndex);
-//			DataCSVExtractor.applicantCount++;
-//			currentIndex++;
-//			log.info("Added applicant index: " + targetIndex);
-//		}
-//	}
+//    @Then(": I click on add additional applicant button")
+//    public void iClickOnAddAdditionalApplicantButton() throws Throwable {
+//        log.info("Clicking on Add Additional applicant button");
+//        reviewPage.wait(reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
+//        browserActions.scrollToWebElement(seleniumdriver,reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
+//        Thread.sleep(3000);
+//        reviewPage.spinner();
+//        browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
+//        log.info("Add Additional applicant button clicked");
+//        Thread.sleep(2000);
+//        reviewPage.spinner();
+//    }
+
+	@Then(": I provide the below additional applicant details for {string}")
+	public void additionalApplicant(String submissionId) throws Throwable {
+		List<Map<?, ?>> applicantDataStore = DataCSVExtractor.applicantDataStore;
+		int totalApplicants = 0;
+		List<Map<String, String>> matchingApplicants = new ArrayList<>();
+		for (Map<?, ?> row : applicantDataStore) {
+			Object submissionIdObj = row.get("submissionId");
+			if (submissionIdObj != null && submissionIdObj.toString().trim().equals(submissionId)){
+				matchingApplicants.add((Map<String, String>) row);
+				totalApplicants++;
+			}
+		}
+		log.info("Total applicants for submissionId " + submissionId + ": " + matchingApplicants.size());
+		int currentIndex = 0;
+		for (int i = 1; i < matchingApplicants.size(); i++) {
+			Map<String, String> row = matchingApplicants.get(i);
+			log.info("CurrentIndex: " + currentIndex);
+			int targetIndex = currentIndex + 1;
+			if (targetIndex >= totalApplicants) break;
+
+			log.info("applicantDataStore get: "+ applicantDataStore.get(targetIndex).toString());
+			reviewPage.waitWithSpinner(reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
+			browserActions.scrollToWebElement(seleniumdriver, reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
+            Thread.sleep(2000);
+            reviewPage.spinner();
+			browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().addAdditionalApplicantButton);
+            Thread.sleep(2000);
+            reviewPage.spinner();
+
+			JSONObject jsonObject = new JSONObject(row);
+			ObjectMapper objectMapper = new ObjectMapper();
+			Person person = objectMapper.readValue(jsonObject.toString(), Person.class);
+
+			Validation validation = new Validation();
+			validation.setSkipPreferredContactDropdown(true);
+			validation.setSkipEmploymentStatusDropdown(true);
+
+			stepData.setValidation(validation);
+			person.setValidation(validation);
+			stepData.setPerson(person);
+
+		reviewPage.addApplicant(person, 1);
+		DataCSVExtractor.applicantCount++;
+			currentIndex++;
+		log.info("Added applicant index: " + targetIndex);
+		}
+	}
 
 //	@And(": I provide the below branch additional applicant details for {string}")
 //	public void branchAdditionalApplicant(String submissionId) throws Throwable {
@@ -207,39 +222,82 @@ public class PersonalPageStepDefinition {
 //		}
 //	}
 
-//	@Then("^: I click on personal details next button$")
-//	public void clickPersonalDetailNextButton() throws Throwable {
-//		log.info("Clicking on next button");
-//		reviewPage.wait(reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
-//		browserActions.scrollToWebElement(seleniumdriver,reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
-//		browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
-//		log.info("Next button clicked");
-//		Thread.sleep(2000);
-//		reviewPage.spinner();
-//	}
+	@Then("^: I click on personal details next button$")
+	public void clickPersonalDetailNextButton() throws Throwable {
+		log.info("Clicking on next button");
+		reviewPage.wait(reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
+		browserActions.scrollToWebElement(seleniumdriver,reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
+        Thread.sleep(1000);
+		browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
+		log.info("Next button clicked");
+		Thread.sleep(1000);
+		reviewPage.spinner();
+	}
     @Then("^: I click on personal details save button$")
     public void clickPersonalDetailSaveButton() throws Throwable {
         log.info("Clicking on Save button");
         reviewPage.wait(reviewPage.getPersonalInfoPageModel().personalInfoSaveButton);
         browserActions.scrollToWebElement(seleniumdriver,reviewPage.getPersonalInfoPageModel().personalInfoSaveButton);
+        Thread.sleep(1000);
         browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().personalInfoSaveButton);
         log.info("Save button clicked");
         Thread.sleep(2000);
         reviewPage.spinner();
+        browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().saveModalSavemyProgress);
+        Thread.sleep(3000);
+        reviewPage.spinner();
+        browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().saveModalContinueButton);
+        Thread.sleep(3000);
+        reviewPage.spinner();
+        browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().personalInfoNextButton);
+        Thread.sleep(3000);
+        reviewPage.spinner();
     }
 
-//	@Then("^: I click on personal details cancel button$")
-//	public void clickPersonalDetailCancelButton() throws Throwable {
-//		log.info("Clicking on cancel button");
-//		reviewPage.wait(reviewPage.getPersonalInfoPageModel().personalInfoCancelButton);
-//		browserActions.scrollToWebElement(seleniumdriver,reviewPage.getPersonalInfoPageModel().personalInfoCancelButton);
-//		browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().personalInfoCancelButton);
-//		log.info("Cancel button clicked");
-//		Thread.sleep(1000);
-//		browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().CancelButton);
-//		reviewPage.spinner();
-//		Thread.sleep(1500);
-//	}
+
+
+
+	@Then("^: I click on personal details cancel button$")
+	public void clickPersonalDetailCancelButton() throws Throwable {
+        log.info("Clicking on Cancel button");
+        Thread.sleep(1000);
+        reviewPage.wait(reviewPage.getPersonalInfoPageModel().personalInfoCancelButton);
+        browserActions.scrollToWebElement(seleniumdriver,reviewPage.getPersonalInfoPageModel().personalInfoCancelButton);
+        Thread.sleep(2000);
+        browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().personalInfoCancelButton);
+        log.info("cancel button clicked");
+        Thread.sleep(2000);
+        reviewPage.spinner();
+        browserActions.clickButton(seleniumdriver, reviewPage.getPersonalInfoPageModel().CancelButton);
+        Thread.sleep(3000);
+        reviewPage.spinner();
+
+	}
+
+    @When(": I provide the below personal details for existing applicant {string}")
+    public void iProvideTheBelowPersonalDetailsForExistingApplicant(String submissionId) throws Throwable {
+        List<Map<?,?>> existingApplicantDataList = DataCSVExtractor.existingApplicantDataStore;
+        ObjectMapper objectMapper = new ObjectMapper();
+        for (int i = 0; i < existingApplicantDataList.size(); i++) {
+            Map<?,?> row = existingApplicantDataList.get(i);
+            if (row.get("submissionId").equals(submissionId)) {
+                JSONObject jsonObject = new JSONObject(row);
+                Person person = objectMapper.readValue(jsonObject.toString(), Person.class);
+                Validation validation= new Validation();
+                validation.setSkipPreferredContactDropdown(true);
+                validation.setSkipEmploymentStatusDropdown(true);
+                log.info("validation before setting "+validation);
+                stepData.setValidation(validation);
+                person.setValidation(stepData.getValidation());
+                stepData.setPerson(person);
+                reviewPage.addExistingApplicant(person, 1);
+                log.info("Personal Information added for submissionId: " + submissionId);
+                break;
+            }
+        }
+    }
+}
+
 
 //	@Then("^: I click on Application Verification next button$")
 //	public void clickApplicationVerificationNextButton() throws Throwable {
@@ -252,4 +310,4 @@ public class PersonalPageStepDefinition {
 //		Thread.sleep(2000);
 //		reviewPage.spinner();
 //	}
-}
+

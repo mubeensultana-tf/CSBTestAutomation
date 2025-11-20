@@ -3,9 +3,9 @@ package com.cztffa.xpath.consumer;
 public class FundingPageXpath {
     public static final String FUNDINGTOGGLEBUTTON = "//label[contains(text(),'Do you want to fund now?')]/ancestor::div[@class='tf-checkbox-layout tf-left-label ng-star-inserted']//div[@class='tf-switch-input-wrapper']//input";
     public static final String SOURCEOFFUNDDRAPPLY = "//tf-dropdown[@t-model='Type__c']/descendant::input";
-    public static final String SOURCEOFFUNDOPAPPLY = "//div[@class='dropdown-item ng-star-inserted'][contains(text(),'External')]";
-    public static final String SOURCEOFFUNDCCAPPLY = "//div[@class='dropdown-item ng-star-inserted'][contains(text(),'Credit')]";
-    public static final String SOURCEOFFUNDDCAPPLY = "//div[@class='dropdown-item ng-star-inserted'][contains(text(),'Debit')]";
+    public static final String SOURCEOFFUNDOPAPPLY = "//div[contains(text(),'External')]";
+    public static final String SOURCEOFFUNDCCAPPLY = "//div[contains(text(),'Credit')]";
+    public static final String SOURCEOFFUNDDCAPPLY = "//div[contains(text(),'Debit')]";
     public static final String FUNDINGNEXTBUTTON = "//button[@class='btn btn-primary float-end tf-step-action-next']";
     public static final String FLOATERMSGVALIDATION = "//div[@class='tf-toast-message']";
     public static final String BTNPLAID = "//button[contains(text(),' Verify with ')]";

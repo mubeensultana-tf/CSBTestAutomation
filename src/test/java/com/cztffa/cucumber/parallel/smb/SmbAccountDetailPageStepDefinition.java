@@ -3,6 +3,7 @@ package com.cztffa.cucumber.parallel.smb;
 import com.cztffa.browseractions.BrowserActions;
 import com.cztffa.driver.SeleniumDriver;
 import com.cztffa.page.review.SmbReviewPage;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import lombok.extern.slf4j.Slf4j;
@@ -32,14 +33,16 @@ public class SmbAccountDetailPageStepDefinition {
         smbReviewPage.fillAccountDetails();
     }
 
-    @Then("^: I click on account details next page$")
-    public void clickAccountDetailNextButton() throws Throwable {
-        smbReviewPage.letSpinnerDisappear();
-        smbReviewPage.waitAndScrollToVisibleElement(seleniumdriver.getWebDriver(),smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
-        browserActions.scrollToWebElement(seleniumdriver,smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
-        smbReviewPage.waitUntilVisibleAndClickable(seleniumdriver.getWebDriver(),smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
-        smbReviewPage.waitWithSpinner(smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
-        browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
-        smbReviewPage.waitForSpinnerToDisappear();
-    }
+//    @Then("^: I click on account details next page$")
+//    public void clickAccountDetailNextButton() throws Throwable {
+//        smbReviewPage.letSpinnerDisappear();
+//        smbReviewPage.waitAndScrollToVisibleElement(seleniumdriver.getWebDriver(),smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
+//        browserActions.scrollToWebElement(seleniumdriver,smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
+//        smbReviewPage.waitUntilVisibleAndClickable(seleniumdriver.getWebDriver(),smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
+//        smbReviewPage.waitWithSpinner(smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
+//        browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), smbReviewPage.getSmbAccountDetailsPageModel().accountDetailsNextButon);
+//        smbReviewPage.waitForSpinnerToDisappear();
+//    }
+
+
 }

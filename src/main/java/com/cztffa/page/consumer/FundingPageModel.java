@@ -28,7 +28,7 @@ public class FundingPageModel {
     @FindBy(xpath = FundingPageXpath.SOURCEOFFUNDDCAPPLY)
     public WebElement sourceOfFundDCApply;
     
-    @FindBy(xpath = FundingPageXpath.FUNDINGNEXTBUTTON)
+    @FindBy(xpath = "//button[normalize-space()='Next']")
     public WebElement fundingNextButton;
     
     @FindBy(xpath = FundingPageXpath.FLOATERMSGVALIDATION)
@@ -67,9 +67,9 @@ public class FundingPageModel {
     @FindBy(xpath = FundingPageXpath.FLAGTRANTOACC)
     public WebElement flagTrantoAcc;
     
-    @FindBy(xpath = FundingPageXpath.ACKNOWLEDGEPALIDTOGGLE)
+    @FindBy(xpath = "//button[normalize-space()='Add Account']")
     public WebElement acknowledgePalidToggle;
-    
+
     @FindBy(xpath = FundingPageXpath.AUTHORIZEPALIDTOGGLE)
     public WebElement authorizePalidToggle;
     

@@ -40,5 +40,6 @@ public class DataCSVExtractor {
 	    public static List<Map<?,?>> productDataStore;
 	    public static List<Map<?,?>> smbproductDataStore;
 		public static List<Map<?,?>> salesforceDataStore;
-
+        public static List<Map<?,?>> existingApplicantDataStore;
+        public static List<Map<?,?>> existingpersonalDataStore;
 }

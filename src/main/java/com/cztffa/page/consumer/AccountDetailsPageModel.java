@@ -13,18 +13,20 @@ public class AccountDetailsPageModel {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = AccountDetailsPageXpath.ONLINEBANKING_2_INPUT)
+    @FindBy(xpath = AccountDetailsPageXpath.ONLINEBANKING)
     public WebElement OnlineBanking;
     
-    @FindBy(xpath = AccountDetailsPageXpath.DEBITCARD_3_INPUT)
-    public WebElement DebitCard;
+    @FindBy(xpath = AccountDetailsPageXpath.ADDDEBITCARDBUTTON)
+    public WebElement addDebitCardButton;
     
-    @FindBy(xpath = AccountDetailsPageXpath.NEXT)
-    public WebElement next;
-
+    @FindBy(xpath = "//button[normalize-space()='Next']")
+    public WebElement accountDetailsNextButton;
+    
     @FindBy(xpath = AccountDetailsPageXpath.CLOSEBUTTON)
     public WebElement closeButton;
-
+    
     @FindBy(xpath = AccountDetailsPageXpath.CANCELBUTTON)
     public WebElement cancelButton;
+
+    
 }

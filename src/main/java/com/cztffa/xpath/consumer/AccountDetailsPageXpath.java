@@ -1,10 +1,9 @@
 package com.cztffa.xpath.consumer;
 
 public class AccountDetailsPageXpath {
-    public static final String ONLINEBANKING_2_INPUT = "//tf-checkbox[@t-model='selected']//input";
-    public static final String DEBITCARD_3_INPUT = "//tf-checkbox[@t-model='selected']//input";
+    public static final String ONLINEBANKING = "//tf-checkbox[@t-model='selected']//input";
+    public static final String ADDDEBITCARDBUTTON = "//tf-checkbox[@t-model='selected']//input";
     public static final String NEXT = "//button[normalize-space()='Next']";
-    public static final String CLOSEBUTTON = "//button[normalize-space()='closeButton']";
-    public static final String CANCELBUTTON = "//button[normalize-space()='cancelButton']";
+    public static final String CLOSEBUTTON = "//button[contains(text(),'Continue')]";
+    public static final String CANCELBUTTON = "//button[contains(text(),'cancel']";
 }
-

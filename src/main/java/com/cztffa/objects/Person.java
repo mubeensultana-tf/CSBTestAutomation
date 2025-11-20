@@ -70,4 +70,16 @@ public class Person {
 	private String ownershipPercentage;
 	
 	private String submissionId;
+
+    private String identificationType;
+
+    private String issuingState;
+
+    private String userName;
+
+    private String Password;
+
+
+
+
 }

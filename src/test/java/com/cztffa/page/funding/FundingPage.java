@@ -31,7 +31,7 @@ public class FundingPage extends AccountDetailsPage {
 
 		ApplicantUtil applicantUtil = new ApplicantUtil();
 		log.info("Processing the funding details");
-		waitForVisibilityWithLoader("//*[contains(text(),'Specify how you would like to')]");
+		//waitForVisibilityWithLoader("//*[contains(text(),'Specify how you would like to')]");
 		String pagesource = seleniumdriver.getWebDriver().getPageSource();
 		if(pagesource.contains("Do you want to fund now?")) {
 			log.info("Clicking funding toggle");
@@ -64,7 +64,7 @@ public class FundingPage extends AccountDetailsPage {
 			selectElement(getSeleniumdriver().getWebDriver(), getFundingPageModel().sourceOfFundOpApply);
 			browserActions.clickApply(getSeleniumdriver().getWebDriver(), getFundingPageModel().sourceOfFundOpApply);
 			log.info("Source of funding selected");
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			waitForSpinnerToDisappear();
 
 			//Branch flow funding started
@@ -83,16 +83,16 @@ public class FundingPage extends AccountDetailsPage {
 
 			else {
 				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().acknowledgePalidToggle);
-				waitForVisibilityWithLoader("//*[contains(text(),'Funding Details')]");
-				Thread.sleep(2000);
+				//waitForVisibilityWithLoader("//*[contains(text(),'Funding Details')]");
+				Thread.sleep(4000);
 				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().acknowledgePalidToggle);
 				log.info("Selected acknowledgePalidToggle");
-				waitWithSpinner(getFundingPageModel().btnPlaid);
-				waitForSpinnerToDisappear();
-				waitForInnerSpinnersToDisappear(getSeleniumdriver().getWebDriver());
-				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().btnPlaid);
-				browserActions.clickUsingEnter(getSeleniumdriver().getWebDriver(), getFundingPageModel().btnPlaid);
-				log.info("Clicked on Verify with Plaid button");
+//				//waitWithSpinner(getFundingPageModel().btnPlaid);
+//				waitForSpinnerToDisappear();
+//				waitForInnerSpinnersToDisappear(getSeleniumdriver().getWebDriver());
+//				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().btnPlaid);
+//				browserActions.clickUsingEnter(getSeleniumdriver().getWebDriver(), getFundingPageModel().btnPlaid);
+//				log.info("Clicked on Verify with Plaid button");
 
 				browserActions.switchToFrame(getSeleniumdriver(), getFundingPageModel().framePlaid);
 				log.info("switching window");
@@ -177,24 +177,24 @@ public class FundingPage extends AccountDetailsPage {
 				waitForSpinnerToDisappear();
 				waitForInnerSpinnersToDisappear(getSeleniumdriver().getWebDriver());
 				waitForSpinnerToDisappear();
-				waitForVisibilityWithLoader("//*[contains(text(),'External Account')]");
-				waitWithSpinner(getFundingPageModel().drpAcNum);
-				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().drpAcNum);
-				waitForSpinnerToDisappear();
-				selectElement(getSeleniumdriver().getWebDriver(), getFundingPageModel().drpAcNum);
-				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().drpAcNum);
-				log.info("Clicked on External account dropdown");
-
-				wait(getFundingPageModel().optAcNum);
-				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().optAcNum);
-				selectElement(getSeleniumdriver().getWebDriver(), getFundingPageModel().optAcNum);
-				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().optAcNum);
-				log.info("Selected Account");
-				log.info("Completed Plaid checking");
-				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().flagTrantoAcc);
-				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().authorizePalidToggle);
-				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().authorizePalidToggle);
-				log.info("Authorized Plaid toggle");
+//				waitForVisibilityWithLoader("//*[contains(text(),'External Account')]");
+//				waitWithSpinner(getFundingPageModel().drpAcNum);
+//				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().drpAcNum);
+//				waitForSpinnerToDisappear();
+//				selectElement(getSeleniumdriver().getWebDriver(), getFundingPageModel().drpAcNum);
+//				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().drpAcNum);
+//				log.info("Clicked on External account dropdown");
+//
+//				wait(getFundingPageModel().optAcNum);
+//				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().optAcNum);
+//				selectElement(getSeleniumdriver().getWebDriver(), getFundingPageModel().optAcNum);
+//				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().optAcNum);
+//				log.info("Selected Account");
+//				log.info("Completed Plaid checking");
+//				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().flagTrantoAcc);
+//				browserActions.scrollToWebElement(getSeleniumdriver(), getFundingPageModel().authorizePalidToggle);
+//				browserActions.clickButton(getSeleniumdriver(), getFundingPageModel().authorizePalidToggle);
+//				log.info("Authorized Plaid toggle");
 			}
 		}
 		else if(funding.getFundingSource().equalsIgnoreCase("creditCard") || funding.getFundingSource().equalsIgnoreCase("debitCard")) {

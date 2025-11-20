@@ -27,4 +27,6 @@ public class Validation {
 
 	private boolean skipQualifyCountry;
 
+    private boolean skipPrimaryIdTypeDropdown;
+
 }

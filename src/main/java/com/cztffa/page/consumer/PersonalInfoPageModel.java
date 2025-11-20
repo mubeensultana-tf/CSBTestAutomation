@@ -13,67 +13,82 @@ public class PersonalInfoPageModel {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = PersonalInfoPageXpath.FIRSTNAME)
-    public WebElement firstName;
+    public String firstName = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='Party__r.FirstName__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.MIDDLENAME)
-    public WebElement middleName;
+    public String middleName = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='Party__r.MiddleName__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.LASTNAME)
-    public WebElement lastName;
+    public String lastName = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='Party__r.LastName__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.DATEOFBIRTH)
-    public WebElement dateOfBirth;
+    public String dateOfBirth = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-date[@t-model='Party__r.BirthDate__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.STREETADDRESS1)
-    public WebElement streetAddress1;
+    public String streetAddress1 = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='Line1__c']/descendant::input";
+
+    public String addressText = "//div[contains(text(),'%s')]";
+
+    public String city = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='City__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.CITY)
-    public WebElement city;
+    public String state = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-dropdown[@t-model='State__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.STATE)
-    public WebElement state;
+    public String zip = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='ZipCode__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.ZIP)
-    public WebElement zip;
+   // public String prefferedContact = "//tf-phone[@t-model='Party__r.PrimaryPhone__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.PREFFEREDCONTACT)
-    public WebElement prefferedContact;
+    public String mobilePhone = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-phone[@t-model='Party__r.PrimaryPhone__c']//input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.MOBILEPHONE)
-    public WebElement mobilePhone;
+    public String employment = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-dropdown[@t-model='Type__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.EMPLOYMENT)
-    public WebElement employment;
+    public String email = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-email[@t-model='Party__r.PrimaryEmail__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.EMAIL)
-    public WebElement email;
+    public String employer = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='EmployerName__c']/descendant::input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.EMPLOYER)
-    public WebElement employer;
+    public String occupation = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='Occupation__c']//input";
     
-    @FindBy(xpath = PersonalInfoPageXpath.OCCUPATION)
-    public WebElement occupation;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.SSN)
-    public WebElement ssn;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.IDTYPE)
-    public WebElement idType;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.IDNUMBER)
-    public WebElement idNumber;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.SECURITYWORD)
-    public WebElement securityWord;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.ISSUEDATE)
-    public WebElement issueDate;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.EXPIRYDATE)
-    public WebElement expiryDate;
-    
-    @FindBy(xpath = PersonalInfoPageXpath.PERSONALINFOSAVEBUTTON)
+    public String ssn = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-ssn[@t-model='Party__r.NationalIdentifierValue__c']/descendant::input";
+
+    public String idType="//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//div[@t-model='Identifications__r.0']//tf-dropdown[@t-model='Type__c']/descendant::input";
+
+    public String stateIssued = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-dropdown[@t-model='IssuingState__c']/descendant::input";
+
+    public String identificationNumber = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-input[@t-model='IdentificationNumber__c']/descendant::input";
+
+    public String issueDate = "//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-date[@t-model='IssueDate__c']//input";
+
+    public String expiryDate ="//tf-expansion-panel//div[@t-model='Submission__c.PartyXrefs__r.%s']//tf-date[@t-model='ExpirationDate__c']/descendant::input";
+
+    @FindBy(xpath ="//div[contains(text(),'Alabama')]")
+    public WebElement stateApply;
+
+    @FindBy(xpath = "//div[contains(text(),'State ID')]")
+    public WebElement idTypeStateIdApply;
+
+    @FindBy(xpath = "//button[normalize-space()='Save My Progress']")
     public WebElement personalInfoSaveButton;
-    
+
+    @FindBy(xpath = "//tf-modal-footer//button[normalize-space()='Save My Progress']")
+    public WebElement saveModalSavemyProgress;
+
+    @FindBy(xpath = "//tf-modal-footer//button[normalize-space()='Continue']")
+    public WebElement saveModalContinueButton;
+
+    @FindBy(xpath = "//div[contains(text(),'Employed')]")
+    public WebElement employmentEmployedApply;
+
+    @FindBy(xpath = "//button[normalize-space()='Next']")
+    public WebElement personalInfoNextButton;
+
+    @FindBy(xpath = "//button//p[contains(text(), 'Cancel Application')]")
+    public WebElement personalInfoCancelButton;
+
+
+    @FindBy(xpath = "//tf-modal-footer//button[normalize-space()='Cancel Application']")
+    public WebElement CancelButton;
+
+    @FindBy(xpath = "//button[contains(text(),'Add Additional Applicant')]")
+    public WebElement addAdditionalApplicantButton;
+
+
+
+
+
+
 }

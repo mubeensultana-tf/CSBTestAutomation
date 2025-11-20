@@ -31,6 +31,7 @@ public class CZTFFAFeatureRunner extends AbstractTestNGCucumberTests {
 		File businessDetail=new File("src/test/resources/businessDetail.csv");
 		File businessPersonalDetail=new File("src/test/resources/businessPersonalDetail.csv");
 		File businessFundingData = new File("src/test/resources/businessFundingData.csv");
+        File existingPersonalData = new File("src/test/resources/existingPersonalData.csv");
         File output = new File("src/test/resources/data.json");
 
 		try {
@@ -45,6 +46,14 @@ public class CZTFFAFeatureRunner extends AbstractTestNGCucumberTests {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+
+        try {
+            DataCSVExtractor.existingpersonalDataStore = DataCSVExtractor.readObjectsFromCsv(existingPersonalData);
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+
 		try {
 			DataCSVExtractor.smbfundingDataStore = DataCSVExtractor.readObjectsFromCsv(businessFundingData);
 		} catch (IOException e1) {
@@ -63,6 +72,7 @@ public class CZTFFAFeatureRunner extends AbstractTestNGCucumberTests {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+
 		try {
 			DataCSVExtractor.businessDataStore = DataCSVExtractor.readObjectsFromCsv(businessDetail);
 		} catch (IOException e1) {
@@ -87,6 +97,8 @@ public class CZTFFAFeatureRunner extends AbstractTestNGCucumberTests {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+
 
 		System.out.println(DataCSVExtractor.applicantDataStore.get(0));
 //		for(int i=0;i<DataCSVExtractor.csvStore.size();i++) {

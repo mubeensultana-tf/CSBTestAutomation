@@ -7,6 +7,7 @@ import com.cztffa.objects.AccountDetails;
 import com.cztffa.objects.Beneficiary;
 import com.cztffa.page.review.ReviewPage;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import lombok.extern.slf4j.Slf4j;
@@ -34,33 +35,47 @@ public class AccountDetailPageStepDefinition {
 		this.browserActions = reviewPage.browserActions;
 	}
 
-	@Then("^: I close promotion close button$")
-	public void iClosePromotionCloseButton() throws Throwable {
-		try {
-			if(seleniumdriver.getWebDriver().getPageSource().contains("Dont miss out on these Offers")){
-				reviewPage.wait(reviewPage.getAccountDetailsPageModel().closeButton);
-				WebElement closeBtn = reviewPage.getAccountDetailsPageModel().closeButton;
-				log.info("closebtn status = {}", closeBtn.isDisplayed());
-				browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), closeBtn);
-				log.info("Clicked on continue");
-			}
-		} catch (Exception ex) {
-			log.error("failed to close the close button");
-		}
-	}
-    @Then("^: I close promotion close button$")
-    public void iClosePromotionCancelButton() throws Throwable {
-        try {
-            if(seleniumdriver.getWebDriver().getPageSource().contains("Dont miss out on these Offers")){
-                reviewPage.wait(reviewPage.getAccountDetailsPageModel().cancelButton);
-                WebElement cancelButton = reviewPage.getAccountDetailsPageModel().cancelButton;
-                log.info("cancelButton status = {}", cancelButton.isDisplayed());
-                browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), cancelButton);
-                log.info("Clicked on continue");
-            }
-        } catch (Exception ex) {
-            log.error("failed to cancel the cancel button ");
-        }
+//	@Then("^: I close promotion close button$")
+//	public void iClosePromotionCloseButton() throws Throwable {
+//		try {
+//			if(seleniumdriver.getWebDriver().getPageSource().contains("Dont miss out on these Offers")){
+//				reviewPage.wait(reviewPage.getAccountDetailsPageModel().closeButton);
+//				WebElement closeBtn = reviewPage.getAccountDetailsPageModel().closeButton;
+//				log.info("closebtn status = {}", closeBtn.isDisplayed());
+//				browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), closeBtn);
+//				log.info("Clicked on continue");
+//			}
+//		} catch (Exception ex) {
+//			log.error("failed to close the close button");
+//		}
+//	}
+//    @Then("^: I close promotion cancel button$")
+//    public void iClosePromotionCancelButton() throws Throwable {
+//        try {
+//            if(seleniumdriver.getWebDriver().getPageSource().contains("Dont miss out on these Offers")){
+//                reviewPage.wait(reviewPage.getAccountDetailsPageModel().cancelButton);
+//                WebElement cancelButton = reviewPage.getAccountDetailsPageModel().cancelButton;
+//                log.info("cancelButton status = {}", cancelButton.isDisplayed());
+//                browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), cancelButton);
+//                log.info("Clicked on continue");
+//            }
+//        } catch (Exception ex) {
+//            log.error("failed to cancel the cancel button ");
+//        }
+//    }
+
+    @Then(": I should see the account details page")
+    public void iShouldSeeTheAccountDetailsPage() throws InterruptedException {
+        // Write code here that turns the phrase above into concrete actions
+           Thread.sleep(1000);
+           reviewPage.spinner();
+//        if (!seleniumdriver.getWebDriver().getPageSource().contains("Choose additional services")) {
+            browserActions.scrollToWebElement(seleniumdriver, reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
+        Thread.sleep(1000);
+            reviewPage.wait(reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
+            browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
+            log.info("Clicked on Next button");
+//        }
     }
 
 //	@Then("^: I click on the overdraft Coverage no checkbox$")
@@ -103,9 +118,9 @@ public class AccountDetailPageStepDefinition {
 //		}
 //	}
 
-//	@Then("^: I click on the account details next button$")
-//	public void iClickOnTheAccountDetailsNextButton() throws Throwable {
-//		Thread.sleep(1000);
+	@Then("^: I click on the account details next button$")
+	public void iClickOnTheAccountDetailsNextButton() throws Throwable {
+		Thread.sleep(1000);
 //
 //		if(seleniumdriver.getWebDriver().getPageSource().contains("Premier Certificate")) {
 //			reviewPage.wait(reviewPage.getAccountDetailsPageModel().certificateSection);
@@ -130,12 +145,12 @@ public class AccountDetailPageStepDefinition {
 //			log.info("Amount entered");
 //			DataCSVExtractor.isFundingCompulsory = true;
 //		}
-//		if(!seleniumdriver.getWebDriver().getPageSource().contains("Fund your Account")) {
-//			browserActions.scrollToWebElement(seleniumdriver, reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
-//			reviewPage.wait(reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
-//			browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
-//			log.info("Clicked on Next button");
-//		}
-//	}
+		if(!seleniumdriver.getWebDriver().getPageSource().contains("Fund your Account")) {
+			browserActions.scrollToWebElement(seleniumdriver, reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
+			reviewPage.wait(reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
+			browserActions.clickUsingEnter(seleniumdriver.getWebDriver(), reviewPage.getAccountDetailsPageModel().accountDetailsNextButton);
+			log.info("Clicked on Next button");
+		}
+	}
 
 }

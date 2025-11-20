@@ -13,7 +13,19 @@ public class ProductSelectorPageModel {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = ProductSelectorPageXpath.CONTINUEBUTTON)
+    @FindBy(xpath = ProductSelectorPageXpath.CHECKOUTBTN)
+    public WebElement checkOutBtn;
+    
+    @FindBy(xpath = "//button[normalize-space()='Continue']")
     public WebElement continuebutton;
+
+    @FindBy(xpath ="//button[normalize-space()='Open an Account']")
+    public WebElement OpenAnAccount;
+
+    @FindBy(xpath = "tf-dropdown[@t-model='State__c']//input")
+   public WebElement state;
+
+
+
     
 }
