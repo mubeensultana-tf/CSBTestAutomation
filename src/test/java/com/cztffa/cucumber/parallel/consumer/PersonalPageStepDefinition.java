@@ -104,7 +104,7 @@ public class PersonalPageStepDefinition {
 				stepData.setValidation(validation);
 				person.setValidation(stepData.getValidation());
 				stepData.setPerson(person);
-				reviewPage.addApplicant(person, 0);
+				reviewPage.addPrimaryApplicant(person, 0);
 				log.info("Personal Information added for submissionId: " + submissionId);
 				break;
 			}

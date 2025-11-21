@@ -10648,3 +10648,711 @@ Session ID: 7e1bc04491c5d9b8cd7128d356ce811e
 2025-11-19 17:48:36,536 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Status of the scenario PASSED 
 2025-11-19 17:48:37,528 - com.cztffa.utilities.MyTestListener -INFO - Testcase file:///C:/Users/ms185944/IdeaProjects/CambridgeTest/cucumber/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@eae - PASSED
 2025-11-19 17:48:37,528 - com.cztffa.utilities.MyTestListener -INFO - Test Case scenario Happy flow of existing applicant scenario "1" execution Finished with the status PASSED
+2025-11-21 15:11:16,816 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 15:11:16,821 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 15:11:16,822 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 15:11:16,823 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 15:11:16,824 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 15:11:16,876 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 15:11:19,857 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 15:11:19,907 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 15:11:19,921 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 15:11:23,708 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 15:11:33,794 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 15:11:33,809 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 15:11:33,809 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 15:11:38,949 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 15:11:50,152 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 15:11:50,349 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 15:11:50,351 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 15:11:51,516 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (d450668875d021a29417e1d2c4a92988)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 15:11:51,652 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 15:11:51,657 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 15:11:52,785 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (d450668875d021a29417e1d2c4a92988)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 15:11:52,895 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 15:11:52,897 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 15:11:58,919 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (d450668875d021a29417e1d2c4a92988)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 15:11:59,022 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 15:11:59,086 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 15:11:59,089 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 15:12:02,724 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Finished scenario Happy flow of two applicant scenario "1"
+2025-11-21 15:12:02,724 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Final line it got executed 68 
+2025-11-21 15:12:02,725 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Status of the scenario FAILED 
+2025-11-21 15:12:03,764 - com.cztffa.utilities.MyTestListener -INFO - Testcase file:///C:/Users/ms185944/IdeaProjects/CambridgeTest/cucumber/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@c04 - FAILED
+2025-11-21 15:12:03,764 - com.cztffa.utilities.MyTestListener -INFO - Test Case scenario Happy flow of two applicant scenario "1" execution Finished with the status FAILED
+2025-11-21 15:12:03,765 - com.cztffa.utilities.MyTestListener -ERROR - error occured while executing the test case Failed to click element: element click intercepted: Element <div class="dropdown-item" tabindex="0" id="tf-option-20" role="option" aria-selected="false">...</div> is not clickable at point (632, 405). Other element would receive the click: <div role="status" class="tf-spinner-overlay">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d450668875d021a29417e1d2c4a92988, clickElement {id=f.DE293C8134FB013FF583F1F99D36A1B8.d.BD108599AD42EEC475688EFDCE1E7912.e.91}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ms185944\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59662}, goog:processID: 12236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59662/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d450668875d021a29417e1d2c4a92988)] -> xpath: //div[contains(text(),' Massachusetts ')]]
+Session ID: d450668875d021a29417e1d2c4a92988
+2025-11-21 15:13:04,459 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 15:13:04,461 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 15:13:04,462 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 15:13:04,462 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 15:13:04,462 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 15:13:04,499 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 15:13:06,561 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 15:13:06,610 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 15:13:06,627 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 15:13:09,491 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 15:13:13,609 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 15:13:13,627 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 15:13:13,627 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 15:13:15,672 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 15:13:19,281 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 15:13:19,543 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 15:13:19,545 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 15:13:20,652 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 15:13:20,788 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 15:13:20,795 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 15:13:21,936 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 15:13:22,044 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 15:13:22,046 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 15:13:24,833 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 15:13:24,937 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 15:13:25,011 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 15:13:25,016 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 15:13:27,498 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - After entering state drop down 
+2025-11-21 15:13:27,595 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Entering details: Person(firstName=Pulkit, lastName=Qfreview, middleName=K, phoneNumber=3802387248, email=yterafinan@gmail.com, ssn=133435437, dob=05051990, motherName=Angel, securityWord=Security, streetAddress1=81 Wyman Street, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, suffix=Sr, expiryDate=01012026, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Brother, applicants=null, validation=null, ownershipPercentage=null, submissionId=1, identificationType=null, issuingState=null, userName=null, Password=null)
+2025-11-21 15:13:28,220 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering first name
+2025-11-21 15:13:28,409 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering last name
+2025-11-21 15:13:28,572 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering phone number
+2025-11-21 15:13:28,823 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering email
+2025-11-21 15:13:29,028 - com.cztffa.page.product.ProductSelectorPage -INFO - Accepting policy
+2025-11-21 15:13:29,048 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-11-21 15:13:29,422 - com.cztffa.page.product.ProductSelectorPage -INFO - Clicked on accept button
+2025-11-21 15:13:29,423 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Details entered
+2025-11-21 15:13:29,423 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 15:13:29,584 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Start Application']]
+2025-11-21 15:13:29,672 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Starting application
+2025-11-21 15:13:37,088 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Navigated to personal information page
+2025-11-21 15:13:37,113 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false, skipPrimaryIdTypeDropdown=false)
+2025-11-21 15:13:37,186 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 15:13:37,408 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 15:13:37,574 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 15:13:37,754 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 15:13:38,062 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 15:13:38,667 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:13:43,436 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:13:43,933 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 15:13:43,934 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 15:13:44,166 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 15:13:44,381 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 15:13:44,524 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 15:13:44,525 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 15:13:44,691 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 15:13:46,697 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 15:13:50,155 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 15:13:50,157 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 15:13:51,471 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 15:13:51,473 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Total applicants for submissionId 1: 2
+2025-11-21 15:13:51,474 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - CurrentIndex: 0
+2025-11-21 15:13:51,474 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - applicantDataStore get: {firstName=Abhishek, middleName=K, lastName=Qfreview, phoneNumber=3802387249, email=test1@gmail.com, ssn=133435438, motherName=Angel1, securityWord=Security1, streetAddress1=81 Wyman Street, dob=05051990, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, expiryDate=01012026, suffix=Sr, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Parent, submissionId=1}
+2025-11-21 15:13:53,612 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[contains(text(),'Add Additional Applicant')]]
+2025-11-21 15:13:55,848 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 15:13:56,099 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 15:13:56,243 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 15:13:56,432 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 15:13:56,766 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 15:13:57,374 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:14:02,168 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:14:02,665 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 15:14:02,666 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 15:14:02,927 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 15:14:03,235 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 15:14:03,426 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 15:14:03,426 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 15:14:03,555 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 15:14:05,559 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 15:14:08,960 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 15:14:08,961 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 15:14:10,303 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Added applicant index: 1
+2025-11-21 15:14:10,304 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Clicking on next button
+2025-11-21 15:14:11,395 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Next']]
+2025-11-21 15:14:11,497 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Next button clicked
+2025-11-21 15:15:00,228 - com.cztffa.cucumber.parallel.consumer.AccountDetailPageStepDefinition -INFO - Clicked on Next button
+2025-11-21 15:15:12,552 - com.cztffa.cucumber.parallel.consumer.FundingPageStepDefinition -INFO - On the funding page
+2025-11-21 15:15:12,600 - com.cztffa.page.funding.FundingPage -INFO - Processing the funding details
+2025-11-21 15:15:14,323 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:15:14,457 - com.cztffa.page.funding.FundingPage -INFO - Clicked on funding dropdown
+2025-11-21 15:15:14,458 - com.cztffa.page.funding.FundingPage -INFO - Selecting source of funding
+2025-11-21 15:15:15,105 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:15:15,244 - com.cztffa.page.funding.FundingPage -INFO - Source of funding selected
+2025-11-21 15:15:26,574 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Add Account']]
+2025-11-21 15:15:26,702 - com.cztffa.page.funding.FundingPage -INFO - Selected acknowledgePalidToggle
+2025-11-21 15:15:26,750 - com.cztffa.page.funding.FundingPage -INFO - switching window
+2025-11-21 15:15:31,793 - com.cztffa.page.funding.FundingPage -INFO - Window switched
+2025-11-21 15:15:42,273 - com.cztffa.page.funding.FundingPage -INFO - Clicked on continue as guest button
+2025-11-21 15:15:47,572 - com.cztffa.page.funding.FundingPage -INFO - Clicked on continue button
+2025-11-21 15:15:57,673 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:15:57,674 - com.cztffa.page.funding.FundingPage -INFO - selecting Bank account
+2025-11-21 15:15:57,684 - com.cztffa.page.funding.FundingPage -INFO - bank name locator[[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[@aria-label='Citibank Online']]
+2025-11-21 15:15:57,689 - com.cztffa.browseractions.BrowserActions -INFO - Checking if webElement: '[[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[@aria-label='Citibank Online']]' exists
+2025-11-21 15:15:57,758 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[@aria-label='Citibank Online']]
+2025-11-21 15:15:57,907 - com.cztffa.page.funding.FundingPage -INFO - Clicking on Continue to login button
+2025-11-21 15:15:59,469 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Continue to login']]
+2025-11-21 15:16:09,885 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:16:09,925 - com.cztffa.page.funding.FundingPage -INFO - Entering username and password
+2025-11-21 15:16:10,262 - com.cztffa.page.funding.FundingPage -INFO - Clicking on Sign in button
+2025-11-21 15:16:10,277 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Sign in']]
+2025-11-21 15:16:20,445 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:16:20,445 - com.cztffa.page.funding.FundingPage -INFO - Clicking on Get code button
+2025-11-21 15:16:25,559 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Get code']]
+2025-11-21 15:16:30,684 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:16:30,685 - com.cztffa.page.funding.FundingPage -INFO - Clicking on Submit button
+2025-11-21 15:16:35,755 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Submit']]
+2025-11-21 15:16:35,875 - com.cztffa.page.funding.FundingPage -INFO - Clicking on Plaid Checking
+2025-11-21 15:16:36,191 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 15:16:36,422 - com.cztffa.page.funding.FundingPage -INFO - Clicked on Continue button
+2025-11-21 15:16:46,526 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:16:47,117 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:16:47,729 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:16:52,784 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:16:52,929 - com.cztffa.page.funding.FundingPage -INFO - Accepted Terms and Conditions
+2025-11-21 15:16:52,946 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Connect account information']]
+2025-11-21 15:16:54,183 - com.cztffa.page.funding.FundingPage -INFO - Clicked on Connected account Information button
+2025-11-21 15:16:57,261 - com.cztffa.page.funding.FundingPage -INFO - Switched frame to frame Plaid
+2025-11-21 15:17:07,340 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:17:07,341 - com.cztffa.page.funding.FundingPage -INFO - Moved to the last continue button finish without saving
+2025-11-21 15:17:14,459 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (39d602e4973bda23654f59cde506da1a)] -> xpath: //button[normalize-space()='Finish without saving']]
+2025-11-21 15:17:14,611 - com.cztffa.page.funding.FundingPage -INFO - Clicked on Continue without saving button
+2025-11-21 15:17:14,614 - com.cztffa.page.funding.FundingPage -INFO - Selecting External account
+2025-11-21 15:17:22,583 - com.cztffa.page.base.BasePage -INFO - Inner spinner have disappeared.
+2025-11-21 15:17:22,600 - com.cztffa.page.funding.FundingPage -INFO - Finished processing of Funding details
+2025-11-21 15:17:22,600 - com.cztffa.cucumber.parallel.consumer.FundingPageStepDefinition -INFO - Funding added for submissionId: 1
+2025-11-21 15:17:22,600 - com.cztffa.cucumber.parallel.consumer.FundingPageStepDefinition -INFO - Funding Page Completed for submissionId: 1
+2025-11-21 15:17:22,951 - com.cztffa.cucumber.parallel.consumer.FundingPageStepDefinition -INFO - Clicked on Next Button
+2025-11-21 15:17:22,953 - com.cztffa.cucumber.parallel.consumer.ReviewPageStepDefinition -INFO -  Starting of T&C Page
+2025-11-21 15:17:34,439 - com.cztffa.browseractions.BrowserActions -ERROR - no such element: Unable to locate element: {"method":"xpath","selector":"(//tf-checkbox[@t-model='Accepted__c']//input)"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39d602e4973bda23654f59cde506da1a, findElement {value=(//tf-checkbox[@t-model='Accepted__c']//input), using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ms185944\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57512}, goog:processID: 24744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57512/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d602e4973bda23654f59cde506da1a
+2025-11-21 15:17:34,441 - com.cztffa.exception.UXException -ERROR - no such element: Unable to locate element: {"method":"xpath","selector":"(//tf-checkbox[@t-model='Accepted__c']//input)"}
+No cause returned
+2025-11-21 15:17:34,442 - com.cztffa.application.AbstractWebApplication -INFO - Capturing screenshot as ./Screenshots/capture.png
+2025-11-21 15:17:34,535 - com.cztffa.application.AbstractWebApplication -WARN - Failed to delete screenshot - capture.png
+2025-11-21 15:17:34,547 - com.cztffa.application.AbstractWebApplication -WARN - Failed to delete Report Portal screenshot - rp_capture.png
+2025-11-21 15:17:34,554 - com.cztffa.exception.UXException -INFO - Finished the attempt to capture a screenshot
+2025-11-21 15:17:34,555 - com.cztffa.page.base.BasePage -ERROR - Error during scroll and pause
+com.cztffa.exception.UXException: no such element: Unable to locate element: {"method":"xpath","selector":"(//tf-checkbox[@t-model='Accepted__c']//input)"}
+No cause returned
+	at com.cztffa.driver.SeleniumUIDriver.createUXException(SeleniumUIDriver.java:146)
+	at com.cztffa.driver.SeleniumUIDriver.exceptionHandler(SeleniumUIDriver.java:96)
+	at com.cztffa.browseractions.BrowserActions.handleWebDriverException(BrowserActions.java:2205)
+	at com.cztffa.browseractions.BrowserActions.scrollToWebElement(BrowserActions.java:1307)
+	at com.cztffa.page.base.BasePage.scrollToElementWithActionPause(BasePage.java:218)
+	at com.cztffa.cucumber.parallel.consumer.ReviewPageStepDefinition.acceptAllTermsAndConditions(ReviewPageStepDefinition.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.ExecutorCompletionService.newTaskFor(ExecutorCompletionService.java:127)
+	at java.base/java.util.concurrent.ExecutorCompletionService.submit(ExecutorCompletionService.java:183)
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:46)
+	at org.testng.internal.MethodRunner.runInParallel(MethodRunner.java:127)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:819)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-11-21 15:17:39,588 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: Proxy element for: DefaultElementLocator 'By.xpath: (//tf-checkbox[@t-model='Accepted__c']//input)'
+2025-11-21 15:17:44,612 - com.cztffa.browseractions.BrowserActions -ERROR - no such element: Unable to locate element: {"method":"xpath","selector":"(//tf-checkbox[@t-model='Accepted__c']//input)"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39d602e4973bda23654f59cde506da1a, findElement {value=(//tf-checkbox[@t-model='Accepted__c']//input), using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ms185944\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57512}, goog:processID: 24744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57512/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d602e4973bda23654f59cde506da1a
+2025-11-21 15:17:44,613 - com.cztffa.exception.UXException -ERROR - no such element: Unable to locate element: {"method":"xpath","selector":"(//tf-checkbox[@t-model='Accepted__c']//input)"}
+No cause returned
+2025-11-21 15:17:44,613 - com.cztffa.application.AbstractWebApplication -INFO - Capturing screenshot as ./Screenshots/capture.png
+2025-11-21 15:17:44,715 - com.cztffa.application.AbstractWebApplication -WARN - Failed to delete screenshot - capture.png
+2025-11-21 15:17:44,722 - com.cztffa.application.AbstractWebApplication -WARN - Failed to delete Report Portal screenshot - rp_capture.png
+2025-11-21 15:17:44,728 - com.cztffa.exception.UXException -INFO - Finished the attempt to capture a screenshot
+2025-11-21 15:17:44,954 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Finished scenario Happy flow of two applicant scenario "1"
+2025-11-21 15:17:44,954 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Final line it got executed 68 
+2025-11-21 15:17:44,956 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Status of the scenario FAILED 
+2025-11-21 15:17:46,023 - com.cztffa.utilities.MyTestListener -INFO - Testcase file:///C:/Users/ms185944/IdeaProjects/CambridgeTest/cucumber/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@c04 - FAILED
+2025-11-21 15:17:46,024 - com.cztffa.utilities.MyTestListener -INFO - Test Case scenario Happy flow of two applicant scenario "1" execution Finished with the status FAILED
+2025-11-21 15:17:46,024 - com.cztffa.utilities.MyTestListener -ERROR - error occured while executing the test case no such element: Unable to locate element: {"method":"xpath","selector":"(//tf-checkbox[@t-model='Accepted__c']//input)"}
+No cause returned
+2025-11-21 15:50:28,117 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 15:50:28,121 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 15:50:28,122 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 15:50:28,122 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 15:50:28,123 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 15:50:28,164 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 15:50:30,748 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 15:50:30,827 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 15:50:30,842 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 15:50:34,372 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 15:50:39,294 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 15:50:39,304 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 15:50:39,304 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 15:50:41,236 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 15:50:45,203 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 15:50:45,497 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 15:50:45,499 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 15:50:46,644 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 15:50:46,819 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 15:50:46,824 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 15:50:47,969 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 15:50:48,126 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 15:50:48,128 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 15:50:50,957 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 15:50:51,096 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 15:50:51,177 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 15:50:51,182 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 15:50:53,994 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - After entering state drop down 
+2025-11-21 15:50:54,078 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Entering details: Person(firstName=Pulkit, lastName=Qfdecline, middleName=K, phoneNumber=3802387248, email=yterafinan@gmail.com, ssn=133435437, dob=05051990, motherName=Angel, securityWord=Security, streetAddress1=81 Wyman Street, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, suffix=Sr, expiryDate=01012026, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Brother, applicants=null, validation=null, ownershipPercentage=null, submissionId=1, identificationType=null, issuingState=null, userName=null, Password=null)
+2025-11-21 15:50:54,753 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering first name
+2025-11-21 15:50:54,917 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering last name
+2025-11-21 15:50:55,099 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering phone number
+2025-11-21 15:50:55,347 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering email
+2025-11-21 15:50:55,591 - com.cztffa.page.product.ProductSelectorPage -INFO - Accepting policy
+2025-11-21 15:50:55,626 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-11-21 15:50:56,067 - com.cztffa.page.product.ProductSelectorPage -INFO - Clicked on accept button
+2025-11-21 15:50:56,068 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Details entered
+2025-11-21 15:50:56,068 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 15:50:56,299 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //button[normalize-space()='Start Application']]
+2025-11-21 15:50:56,455 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Starting application
+2025-11-21 15:51:00,141 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Navigated to personal information page
+2025-11-21 15:51:00,155 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false, skipPrimaryIdTypeDropdown=false)
+2025-11-21 15:51:00,250 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 15:51:00,467 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 15:51:00,591 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 15:51:00,732 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 15:51:01,010 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 15:51:01,655 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:51:06,754 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:51:07,250 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 15:51:07,251 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 15:51:07,478 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 15:51:07,738 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 15:51:08,008 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 15:51:08,008 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 15:51:08,251 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 15:51:10,262 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 15:51:14,018 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 15:51:14,019 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 15:51:15,828 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 15:51:15,831 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Total applicants for submissionId 1: 2
+2025-11-21 15:51:15,832 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - CurrentIndex: 0
+2025-11-21 15:51:15,832 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - applicantDataStore get: {firstName=Abhishek, middleName=K, lastName=Qfreview, phoneNumber=3802387249, email=test1@gmail.com, ssn=133435438, motherName=Angel1, securityWord=Security1, streetAddress1=81 Wyman Street, dob=05051990, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, expiryDate=01012026, suffix=Sr, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Parent, submissionId=1}
+2025-11-21 15:51:18,034 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //button[contains(text(),'Add Additional Applicant')]]
+2025-11-21 15:51:20,285 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 15:51:20,461 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 15:51:20,607 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 15:51:20,742 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 15:51:21,086 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 15:51:21,753 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:51:26,668 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:51:27,198 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 15:51:27,198 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 15:51:27,445 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 15:51:27,675 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 15:51:27,941 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 15:51:27,943 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 15:51:28,093 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 15:51:30,098 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 15:51:33,690 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 15:51:33,691 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 15:51:34,974 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Added applicant index: 1
+2025-11-21 15:51:34,975 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Clicking on next button
+2025-11-21 15:51:36,062 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (e7f96df69cb3bf47a66445ffb18eca9a)] -> xpath: //button[normalize-space()='Next']]
+2025-11-21 15:51:36,213 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Next button clicked
+2025-11-21 15:52:02,227 - com.cztffa.cucumber.parallel.consumer.AccountDetailPageStepDefinition -INFO - Clicked on Next button
+2025-11-21 15:52:10,551 - com.cztffa.cucumber.parallel.consumer.FundingPageStepDefinition -INFO - On the funding page
+2025-11-21 15:52:10,562 - com.cztffa.page.funding.FundingPage -INFO - Processing the funding details
+2025-11-21 15:52:12,465 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:52:12,764 - com.cztffa.page.funding.FundingPage -INFO - Clicked on funding dropdown
+2025-11-21 15:52:12,765 - com.cztffa.page.funding.FundingPage -INFO - Selecting source of funding
+2025-11-21 15:52:13,486 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 15:52:13,764 - com.cztffa.page.funding.FundingPage -INFO - Source of funding selected
+2025-11-21 16:24:14,771 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 16:24:14,775 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 16:24:14,776 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 16:24:14,777 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 16:24:14,779 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 16:24:14,830 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 16:24:17,032 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 16:24:17,089 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 16:24:17,108 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 16:24:20,387 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 16:24:24,736 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 16:24:24,754 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 16:24:24,754 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 16:24:26,357 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 16:24:30,470 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 16:24:30,736 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 16:24:30,739 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:24:31,869 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 16:24:32,019 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 16:24:32,027 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:24:33,196 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 16:24:33,319 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 16:24:33,322 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 16:24:36,219 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 16:24:36,371 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 16:24:36,487 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 16:24:36,491 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 16:24:38,998 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - After entering state drop down 
+2025-11-21 16:24:39,100 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Entering details: Person(firstName=Pulkit, lastName=Qfdecline, middleName=K, phoneNumber=3802387248, email=yterafinan@gmail.com, ssn=133435437, dob=05051990, motherName=Angel, securityWord=Security, streetAddress1=81 Wyman Street, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, suffix=Sr, expiryDate=01012026, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Brother, applicants=null, validation=null, ownershipPercentage=null, submissionId=1, identificationType=null, issuingState=null, userName=null, Password=null)
+2025-11-21 16:24:39,742 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering first name
+2025-11-21 16:24:39,902 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering last name
+2025-11-21 16:24:40,043 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering phone number
+2025-11-21 16:24:40,337 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering email
+2025-11-21 16:24:40,562 - com.cztffa.page.product.ProductSelectorPage -INFO - Accepting policy
+2025-11-21 16:24:40,584 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-11-21 16:24:41,110 - com.cztffa.page.product.ProductSelectorPage -INFO - Clicked on accept button
+2025-11-21 16:24:41,112 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Details entered
+2025-11-21 16:24:41,113 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:24:41,329 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //button[normalize-space()='Start Application']]
+2025-11-21 16:24:41,435 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Starting application
+2025-11-21 16:24:45,150 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Navigated to personal information page
+2025-11-21 16:24:45,180 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false, skipPrimaryIdTypeDropdown=false)
+2025-11-21 16:24:45,289 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 16:24:45,573 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:24:45,660 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 16:24:45,863 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:24:46,137 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:24:46,756 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:24:51,600 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:24:52,115 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:24:52,116 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:24:52,465 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:24:52,767 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:24:53,040 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:24:53,042 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:24:53,159 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:24:55,176 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:24:58,682 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 16:24:58,683 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 16:25:00,166 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:25:00,168 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Total applicants for submissionId 1: 2
+2025-11-21 16:25:00,168 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - CurrentIndex: 0
+2025-11-21 16:25:00,169 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - applicantDataStore get: {firstName=Abhishek, middleName=K, lastName=Kumar, phoneNumber=3802387249, email=test1@gmail.com, ssn=133435438, motherName=Angel1, securityWord=Security1, streetAddress1=81 Wyman Street, dob=05051990, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, expiryDate=01012026, suffix=Sr, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Parent, submissionId=1}
+2025-11-21 16:25:02,304 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //button[contains(text(),'Add Additional Applicant')]]
+2025-11-21 16:25:05,064 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 16:25:05,371 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:25:05,535 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 16:25:05,749 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:25:06,109 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:25:06,743 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:25:11,592 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:25:12,185 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:25:12,186 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:25:12,450 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:25:12,786 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:25:13,029 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:25:13,030 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:25:13,188 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:25:15,204 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:25:18,676 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 16:25:18,676 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 16:25:20,185 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Added applicant index: 1
+2025-11-21 16:25:20,187 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Clicking on next button
+2025-11-21 16:25:21,288 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (08c5f330c98654491df03c6acc9d41c0)] -> xpath: //button[normalize-space()='Next']]
+2025-11-21 16:25:21,432 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Next button clicked
+2025-11-21 16:29:11,309 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 16:29:11,311 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 16:29:11,313 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 16:29:11,313 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 16:29:11,313 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 16:29:11,367 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 16:29:13,565 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 16:29:13,738 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 16:29:13,766 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 16:29:17,563 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 16:29:21,615 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 16:29:21,634 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 16:29:21,634 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 16:29:26,135 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 16:29:26,565 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 16:29:26,889 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 16:29:26,891 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:29:28,013 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (a0864818dce9cb37aa617aa27374a2b6)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 16:29:28,205 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 16:29:28,213 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:29:29,388 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (a0864818dce9cb37aa617aa27374a2b6)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 16:29:29,552 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 16:29:29,555 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 16:29:32,470 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (a0864818dce9cb37aa617aa27374a2b6)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 16:29:32,716 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 16:29:32,851 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 16:29:32,855 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 16:29:35,397 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - After entering state drop down 
+2025-11-21 16:29:35,539 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Entering details: Person(firstName=Pulkit, lastName=Qfdecline, middleName=K, phoneNumber=3802387248, email=yterafinan@gmail.com, ssn=133435437, dob=05051990, motherName=Angel, securityWord=Security, streetAddress1=81 Wyman Street, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, suffix=Sr, expiryDate=01012026, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Brother, applicants=null, validation=null, ownershipPercentage=null, submissionId=1, identificationType=null, issuingState=null, userName=null, Password=null)
+2025-11-21 16:29:37,213 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering first name
+2025-11-21 16:29:37,385 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering last name
+2025-11-21 16:29:37,604 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering phone number
+2025-11-21 16:29:37,989 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering email
+2025-11-21 16:29:38,201 - com.cztffa.page.product.ProductSelectorPage -INFO - Accepting policy
+2025-11-21 16:29:38,225 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (a0864818dce9cb37aa617aa27374a2b6)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-11-21 16:29:38,833 - com.cztffa.page.product.ProductSelectorPage -INFO - Clicked on accept button
+2025-11-21 16:29:38,833 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Details entered
+2025-11-21 16:29:38,834 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:29:39,031 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (a0864818dce9cb37aa617aa27374a2b6)] -> xpath: //button[normalize-space()='Start Application']]
+2025-11-21 16:29:39,149 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Starting application
+2025-11-21 16:29:42,855 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Navigated to personal information page
+2025-11-21 16:29:42,878 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false, skipPrimaryIdTypeDropdown=false)
+2025-11-21 16:29:43,015 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 16:29:43,367 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:29:43,518 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 16:29:43,744 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:29:44,123 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:29:44,781 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:29:49,762 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:29:50,438 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:29:50,439 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:29:50,798 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:29:51,133 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:29:51,370 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:29:51,371 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:29:51,510 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:29:53,520 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:37:23,375 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 16:37:23,380 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 16:37:23,380 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 16:37:23,381 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 16:37:23,382 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 16:37:23,435 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 16:37:25,761 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 16:37:25,832 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 16:37:25,858 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 16:37:29,631 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 16:37:33,679 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 16:37:33,700 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 16:37:33,701 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 16:37:35,444 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 16:37:38,855 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 16:37:39,181 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 16:37:39,185 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:37:40,310 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 16:37:40,492 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 16:37:40,498 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:37:41,723 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 16:37:41,873 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 16:37:41,876 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 16:37:44,789 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 16:37:45,007 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 16:37:45,118 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 16:37:45,121 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 16:37:47,747 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - After entering state drop down 
+2025-11-21 16:37:47,883 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Entering details: Person(firstName=Pulkit, lastName=Qfdecline, middleName=K, phoneNumber=3802387248, email=yterafinan@gmail.com, ssn=133435437, dob=05051990, motherName=Angel, securityWord=Security, streetAddress1=81 Wyman Street, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, suffix=Sr, expiryDate=01012026, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Brother, applicants=null, validation=null, ownershipPercentage=null, submissionId=1, identificationType=null, issuingState=null, userName=null, Password=null)
+2025-11-21 16:37:48,508 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering first name
+2025-11-21 16:37:48,677 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering last name
+2025-11-21 16:37:48,854 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering phone number
+2025-11-21 16:37:49,175 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering email
+2025-11-21 16:37:49,404 - com.cztffa.page.product.ProductSelectorPage -INFO - Accepting policy
+2025-11-21 16:37:49,430 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-11-21 16:37:50,040 - com.cztffa.page.product.ProductSelectorPage -INFO - Clicked on accept button
+2025-11-21 16:37:50,041 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Details entered
+2025-11-21 16:37:50,041 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:37:50,338 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //button[normalize-space()='Start Application']]
+2025-11-21 16:37:50,446 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Starting application
+2025-11-21 16:37:54,207 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Navigated to personal information page
+2025-11-21 16:37:54,241 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false, skipPrimaryIdTypeDropdown=false)
+2025-11-21 16:37:54,385 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:37:54,555 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:37:55,042 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:37:55,680 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:38:00,582 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:38:01,222 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:38:01,222 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:38:01,600 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:38:01,933 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:38:02,198 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:38:02,200 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:38:02,368 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:38:04,370 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:38:07,870 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 16:38:07,871 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 16:38:09,154 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:38:09,156 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Total applicants for submissionId 1: 2
+2025-11-21 16:38:09,156 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - CurrentIndex: 0
+2025-11-21 16:38:09,157 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - applicantDataStore get: {firstName=Abhishek, middleName=K, lastName=Kumar, phoneNumber=3802387249, email=test1@gmail.com, ssn=133435438, motherName=Angel1, securityWord=Security1, streetAddress1=81 Wyman Street, dob=05051990, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, expiryDate=01012026, suffix=Sr, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Parent, submissionId=1}
+2025-11-21 16:38:11,297 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //button[contains(text(),'Add Additional Applicant')]]
+2025-11-21 16:38:13,644 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 16:38:14,017 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:38:14,176 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 16:38:14,338 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:38:14,723 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:38:15,340 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:38:20,175 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:38:20,882 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:38:20,883 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:38:21,300 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:38:21,610 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:38:21,952 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:38:21,953 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:38:22,138 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:38:24,149 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:38:27,778 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 16:38:27,779 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 16:38:29,264 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Added applicant index: 1
+2025-11-21 16:38:29,265 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Clicking on next button
+2025-11-21 16:38:30,357 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (974c8ba8d9eb901a1aeb38672de0fb2e)] -> xpath: //button[normalize-space()='Next']]
+2025-11-21 16:38:30,525 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Next button clicked
+2025-11-21 16:39:07,415 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting scenario Happy flow of two applicant scenario "1" 
+2025-11-21 16:39:07,418 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - [@flow=digital]
+2025-11-21 16:39:07,419 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO -  tag name ============ @flow=digital
+2025-11-21 16:39:07,419 - com.cztffa.page.base.BasePage -INFO - Initializing the properties
+2025-11-21 16:39:07,420 - com.cztffa.page.base.BasePage -INFO - Successfully loaded the properties
+2025-11-21 16:39:07,477 - io.github.bonigarcia.wdm.cache.ResolutionCache -INFO - Clearing WebDriverManager resolution cache
+2025-11-21 16:39:09,689 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-21 16:39:09,773 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\ms185944\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-21 16:39:09,796 - com.cztffa.webbrowser.ChromeBrowserSetupImpl -INFO - Launching chrome driver
+2025-11-21 16:39:13,307 - com.cztffa.application.ChromeWebApplication -INFO - Chrome launched
+2025-11-21 16:39:17,114 - com.cztffa.driver.SeleniumUIDriver -INFO - Application launched
+2025-11-21 16:39:17,143 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Starting of home page
+2025-11-21 16:39:17,145 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - loaded home page 
+2025-11-21 16:39:18,846 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicking all products for submissionId: 1
+2025-11-21 16:39:22,883 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleChecking
+2025-11-21 16:39:23,199 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Clicked product: SimpleSavings
+2025-11-21 16:39:23,202 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:39:24,338 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //button[normalize-space()='Checkout']]
+2025-11-21 16:39:24,544 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of checkout btn
+2025-11-21 16:39:24,553 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before click of checkout btn
+2025-11-21 16:39:25,745 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //button[normalize-space()='Continue']]
+2025-11-21 16:39:25,891 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of continue button
+2025-11-21 16:39:25,895 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Add New button
+2025-11-21 16:39:28,959 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //button[normalize-space()='Open an Account']]
+2025-11-21 16:39:29,135 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - On click of Open an account button
+2025-11-21 16:39:29,248 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - On getting started page
+2025-11-21 16:39:29,252 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Before clicking on Accept checkbox
+2025-11-21 16:39:31,818 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - After entering state drop down 
+2025-11-21 16:39:31,945 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Entering details: Person(firstName=Pulkit, lastName=Qfdecline, middleName=K, phoneNumber=3802387248, email=yterafinan@gmail.com, ssn=133435437, dob=05051990, motherName=Angel, securityWord=Security, streetAddress1=81 Wyman Street, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, suffix=Sr, expiryDate=01012026, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Brother, applicants=null, validation=null, ownershipPercentage=null, submissionId=1, identificationType=null, issuingState=null, userName=null, Password=null)
+2025-11-21 16:39:32,576 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering first name
+2025-11-21 16:39:32,745 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering last name
+2025-11-21 16:39:32,949 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering phone number
+2025-11-21 16:39:33,333 - com.cztffa.page.product.ProductSelectorPage -INFO - Entering email
+2025-11-21 16:39:33,596 - com.cztffa.page.product.ProductSelectorPage -INFO - Accepting policy
+2025-11-21 16:39:33,627 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //tf-checkbox[@t-model='Accepted__c']//input]
+2025-11-21 16:39:34,225 - com.cztffa.page.product.ProductSelectorPage -INFO - Clicked on accept button
+2025-11-21 16:39:34,227 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Details entered
+2025-11-21 16:39:34,228 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:39:34,464 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //button[normalize-space()='Start Application']]
+2025-11-21 16:39:34,585 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Starting application
+2025-11-21 16:39:38,283 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Navigated to personal information page
+2025-11-21 16:39:38,318 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - validation before setting Validation(skipQualifyButton=false, skipCitizenshipDropDown=false, skipStateDropdown=false, skipEmploymentStatusDropdown=true, skipPreferredContactDropdown=true, skipStateIssuedDropdown=false, skipMemberDiligenceOptions=false, skipQualifyCountry=false, skipPrimaryIdTypeDropdown=false)
+2025-11-21 16:39:38,422 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:39:38,575 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:39:39,072 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:39:39,706 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:39:44,543 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:39:45,199 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:39:45,200 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:39:45,572 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:39:46,001 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:39:46,276 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:39:46,276 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:39:46,420 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:39:48,426 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:39:52,008 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 16:39:52,009 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 16:39:53,406 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Personal Information added for submissionId: 1
+2025-11-21 16:39:53,411 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Total applicants for submissionId 1: 2
+2025-11-21 16:39:53,411 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - CurrentIndex: 0
+2025-11-21 16:39:53,412 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - applicantDataStore get: {firstName=Abhishek, middleName=K, lastName=Qfdecline, phoneNumber=3802387249, email=test1@gmail.com, ssn=133435438, motherName=Angel1, securityWord=Security1, streetAddress1=81 Wyman Street, dob=05051990, city=Waltham, zip=02451-1223, homePhone=3802387247, workPhone=3802387246, occupation=self employed, employer=test, identificationNumber=12345678, issueDate=01012020, expiryDate=01012026, suffix=Sr, citizenShip=citizen, prefferedContactMethod=mobile, employmentStatus=Employed, prefferedId=State ID, membershipQualify=relate, memberName=TestUser, relationship=Parent, submissionId=1}
+2025-11-21 16:39:55,583 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //button[contains(text(),'Add Additional Applicant')]]
+2025-11-21 16:39:57,838 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering first name
+2025-11-21 16:39:58,163 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering middle name
+2025-11-21 16:39:58,303 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering last name
+2025-11-21 16:39:58,465 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Entering date of birth
+2025-11-21 16:39:58,761 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting street address dropdown ::81 Wyman Street
+2025-11-21 16:39:59,396 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:40:04,243 - com.cztffa.page.base.BasePage -INFO - Selected element (dropdown value or checkbox)
+2025-11-21 16:40:04,909 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - After entering Zipcode
+2025-11-21 16:40:04,910 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering mobile phone no
+2025-11-21 16:40:05,262 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering email
+2025-11-21 16:40:05,568 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - entering SSN
+2025-11-21 16:40:05,840 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - SSN entered
+2025-11-21 16:40:05,841 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entering
+2025-11-21 16:40:06,005 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - selecting employment method Employed
+2025-11-21 16:40:08,018 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO -  employment status entered
+2025-11-21 16:40:11,657 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - employment details entered
+2025-11-21 16:40:11,658 - com.cztffa.page.personalinfo.PersonalInfoPage -INFO - Identification Documents applicable
+2025-11-21 16:40:13,248 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Added applicant index: 1
+2025-11-21 16:40:13,249 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Clicking on next button
+2025-11-21 16:40:14,323 - com.cztffa.browseractions.BrowserActions -INFO - Attempting to click: [[ChromeDriver: chrome on windows (6091e1fd31df96b78ad4b7c9d503accf)] -> xpath: //button[normalize-space()='Next']]
+2025-11-21 16:40:14,477 - com.cztffa.cucumber.parallel.consumer.PersonalPageStepDefinition -INFO - Next button clicked
+2025-11-21 16:40:56,006 - com.cztffa.browseractions.BrowserActions -ERROR - no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Next']"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6091e1fd31df96b78ad4b7c9d503accf, findElement {using=xpath, value=//button[normalize-space()='Next']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ms185944\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60363}, goog:processID: 19544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60363/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6091e1fd31df96b78ad4b7c9d503accf
+2025-11-21 16:40:56,007 - com.cztffa.exception.UXException -ERROR - no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Next']"}
+No cause returned
+2025-11-21 16:40:56,007 - com.cztffa.application.AbstractWebApplication -INFO - Capturing screenshot as ./Screenshots/capture.png
+2025-11-21 16:40:56,168 - com.cztffa.application.AbstractWebApplication -WARN - Failed to delete screenshot - capture.png
+2025-11-21 16:40:56,185 - com.cztffa.application.AbstractWebApplication -WARN - Failed to delete Report Portal screenshot - rp_capture.png
+2025-11-21 16:40:56,195 - com.cztffa.exception.UXException -INFO - Finished the attempt to capture a screenshot
+2025-11-21 16:40:56,418 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Finished scenario Happy flow of two applicant scenario "1"
+2025-11-21 16:40:56,418 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Final line it got executed 68 
+2025-11-21 16:40:56,419 - com.cztffa.cucumber.parallel.consumer.ProductStepDefinition -INFO - Status of the scenario FAILED 
+2025-11-21 16:40:57,136 - com.cztffa.utilities.MyTestListener -INFO - Testcase file:///C:/Users/ms185944/IdeaProjects/CambridgeTest/cucumber/src/test/resources/com/cztffa/cucumber/consumer_digital_parallel/Consumer.featureio.cucumber.plugin.event.Location@c04 - FAILED
+2025-11-21 16:40:57,138 - com.cztffa.utilities.MyTestListener -INFO - Test Case scenario Happy flow of two applicant scenario "1" execution Finished with the status FAILED
+2025-11-21 16:40:57,139 - com.cztffa.utilities.MyTestListener -ERROR - error occured while executing the test case no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Next']"}
+No cause returned
