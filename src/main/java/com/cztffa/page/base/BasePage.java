@@ -10,14 +10,7 @@ import com.cztffa.application.WebApplicationEnum;
 import com.cztffa.browseractions.BrowserActions;
 import com.cztffa.driver.SeleniumDriver;
 import com.cztffa.driver.SeleniumUIDriver;
-import com.cztffa.page.consumer.AccountDetailsPageModel;
-import com.cztffa.page.consumer.DisclosuresPageModel;
-import com.cztffa.page.consumer.FundingPageModel;
-import com.cztffa.page.consumer.GettingStartedPageModel;
-import com.cztffa.page.consumer.PersonalInfoPageModel;
-import com.cztffa.page.consumer.ProductSelectorPageModel;
-import com.cztffa.page.consumer.ReviewPageModel;
-import com.cztffa.page.consumer.SalesforceDetailsPageModel;
+import com.cztffa.page.consumer.*;
 
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
@@ -104,6 +97,9 @@ public class BasePage {
 		return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(FundingPageModel.class);
 	}
 
+    public DocumentPageModel getDocumentPageModel() {
+        return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(DocumentPageModel.class);
+    }
 	public ReviewPageModel getReviewPageModel() {
 		return getSeleniumdriver().getWebApplication(getWebBrowserType()).getModel(ReviewPageModel.class);
 	}

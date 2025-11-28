@@ -5,4 +5,6 @@ public class ReviewPageXpath {
     public static final String SUBMITBUTTON = "//button[normalize-space()='Submit Application']";
     public static final String SUCCESSMSG = "//h2[contains(text(),'Congratulations')]";
     public static final String DISCLOSURECHECKBOX = "//div[@t-model='Disclosures__r.%s']//tf-checkbox//input";
+    public static final String OLBSUCCESSMSG = "//strong[contains(text(),'Applicant enrolled for Online Banking')]";
+
 }

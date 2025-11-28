@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertTrue;
+import java.util.UUID;
 
 @Slf4j
 public class ReviewPageStepDefinition {
@@ -79,12 +80,41 @@ Thread.sleep(1000);
         log.info("Successfully completed the flow");
     }
 
+
+
     @Then(": I should see the review page.")
     public void iShouldSeeTheReviewPage() throws Throwable {
         DataCSVExtractor.applicantCount++;
         reviewPage.spinner();
         assertTrue(reviewPage.getReviewPageModel().reviewpageloadmsg.isDisplayed());
         log.info("Successfully loaded a review page");
+    }
+
+    @Then(": I complete OLB registration for primary applicant")
+    public void i_should_see_the_OLB_registration() throws Throwable {
+
+        reviewPage.spinner();
+        String baseUsername = "testUser";
+        String uniqueUsername = baseUsername + "_" + UUID.randomUUID().toString().substring(0, 8); // 8-char unique suffix
+        String password = "TestPassword@123";
+
+        log.info("Entering username: " + uniqueUsername);
+        browserActions.scrollToWebElement(seleniumdriver, reviewPage.getReviewPageModel().olbusername);
+         Thread.sleep(1000);
+        browserActions.enterText(seleniumdriver, reviewPage.getReviewPageModel().olbusername, uniqueUsername);
+        log.info("Entering password");
+        browserActions.enterText(seleniumdriver, reviewPage.getReviewPageModel().olbpassword, password);
+        log.info("Entering retype password");
+        browserActions.enterText(seleniumdriver, reviewPage.getReviewPageModel().olbrenterpassword, password);
+        log.info("clicking on olb registration  accept checkbox");
+        browserActions.clickButton(seleniumdriver, reviewPage.getReviewPageModel().olbregisteracceptbtn);
+        log.info("OLb registration checkbox selected");
+        Thread.sleep(1000);
+        browserActions.clickButton(seleniumdriver, reviewPage.getReviewPageModel().Registerbutton);
+        Thread.sleep(1000);
+        reviewPage.spinner();
+        assertTrue(reviewPage.getReviewPageModel().olbregistrationsuccessmsg.isDisplayed());
+       log.info("Successfully completed the flow");
     }
     }
 

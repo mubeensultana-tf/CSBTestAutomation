@@ -26,5 +26,25 @@ public class ReviewPageModel {
     public WebElement reviewpageloadmsg;
     
     public String disclosureCheckbox = "//div[@t-model='Disclosures__r.%s']//tf-checkbox//input";
-    
+
+    @FindBy(xpath = "//tf-input[@t-model='username']//input")
+    public WebElement olbusername;
+
+    @FindBy(xpath = "//tf-input[@t-model='password']//input")
+    public WebElement olbpassword;
+
+    @FindBy(xpath = "//tf-input[@t-model='retypePassword']//input")
+    public WebElement olbrenterpassword;
+
+    @FindBy(xpath = "//button[normalize-space()='Register']")
+    public WebElement Registerbutton;
+
+    @FindBy(xpath = "//tf-checkbox[@t-model='Accepted__c']//input")
+    public WebElement olbregisteracceptbtn;
+
+    @FindBy(xpath = ReviewPageXpath.OLBSUCCESSMSG)
+    public WebElement olbregistrationsuccessmsg;
+
+
+
 }
